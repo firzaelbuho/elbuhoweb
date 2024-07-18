@@ -1,23 +1,31 @@
 // import React from 'react';
+import { ButtonShape, ButtonStyle, ButtonType } from "@/models/Button";
+import { Color } from "@/models/Color";
+import { Size } from "@/models/Size";
 import classNames from "classnames";
 
 interface ButtonProps {
   label: string;
   onClick?: () => void;
-  type?: 'button' | 'submit' | 'reset';
-  color?: 'none'|'primary' | 'secondary' | 'accent' | "neutral" | "info" | "warning" | "success" | "error"  ;
-  style?: "none" | "ghost" | "link" | "glass" | "outline"
+  type?: ButtonType;
+  color?: Color  ;
+  style?: ButtonStyle
   isDisabled?:boolean;
   isActive?:boolean;
-  size?: "xs"|"sm" | "md" | "lg" | "responsive";
-  shape?:"none"|"square" | "circle" | "wide" | "block"
+  size?: Size ;
+  shape?:ButtonShape;
 
 }
 
 
 
 const Button: React.FC<ButtonProps> = ({ 
-  label, onClick, type = 'button', color="none" , size="md", shape="none", style="none",
+  label, onClick, 
+  type = ButtonType.BUTTON, 
+  color= Color.INHERIT , 
+  size= Size.MD, 
+  shape=ButtonShape.NONE, 
+  style=ButtonStyle.NONE,
   isDisabled=false, isActive=false
 }) => {
 

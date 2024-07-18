@@ -1,5 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
+import { BorderRadius, BorderStyle } from '@/models/Border';
+import { ImageAlignment } from '@/models/Alignment';
+import { ImageFit } from '@/models/Image';
+
 
 
 interface ImageProps {
@@ -7,11 +11,12 @@ interface ImageProps {
   alt?:string
   width?: string;
   height?: string;
-  fit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
-  alignment?: 'left' | 'center' | 'right';
-  borderRadius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full';
-  border?: 'none' | 'solid' | 'dashed' | 'dotted';
+  fit?: ImageFit;
+  alignment?: ImageAlignment;
+  borderRadius?: BorderRadius;
+
   borderColor?: string;
+  borderStyle?: BorderStyle;
 }
 
 const Image: React.FC<ImageProps> = ({
@@ -19,11 +24,13 @@ const Image: React.FC<ImageProps> = ({
   alt ="",
   width,
   height,
-  fit = 'none',
-  alignment = 'center',
-  borderRadius = 'none',
-  border = 'none',
-  borderColor = 'black'
+  fit = ImageFit.NONE,
+  alignment = ImageAlignment.LEFT,
+  borderRadius = BorderRadius.MD,
+  borderStyle = BorderStyle.NONE
+
+
+
   
 }) => {
   const imageClass = classNames(
@@ -44,10 +51,10 @@ const Image: React.FC<ImageProps> = ({
       'rounded-full': borderRadius === 'full',
     },
     {
-        'border-none': border === 'none',
-        'border-solid': border === 'solid',
-        'border-dashed': border === 'dashed',
-        'border-dotted': border === 'dotted',
+        'border-none': borderStyle === BorderStyle.NONE,
+        'border-solid': borderStyle === BorderStyle.SOLID,
+        'border-dashed': borderStyle === BorderStyle.DASHED,
+        'border-dotted': borderStyle === BorderStyle.DOTTED,
       }
   );
 

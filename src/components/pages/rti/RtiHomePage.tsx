@@ -5,9 +5,9 @@ import ThemeChanger from "@/components/molecules/ThemeChanger"
 import RtiNavbar from "@/components/organisms/RtiNavbar"
 import Testing from "@/components/molecules/Testing"
 import Image from "@/components/atoms/Image"
-import TextBlock from "@/components/atoms/TextBlock"
+import TextBlock from "@/components/atoms/Text"
 import RtiJumbotron from "@/components/molecules/rti/RtiJumbotron"
-import RtiWelcome from "@/components/organisms/RtiWelcome"
+import RtiWelcome from "@/components/molecules/rti/RtiWelcome"
 import Footer from "@/components/organisms/Footer"
 import RtiCharacters from "@/components/molecules/rti/RtiCharacters"
 
@@ -41,7 +41,7 @@ export default function RtiHomePage() {
 
         {/* introduction */}
 
-        <div className="py-5  bg-accent">
+        <div className="py-5  bg-accent bg-">
           <div className="container w-2/3 mx-auto text-accent-content">
           <RtiWelcome />
           <RtiCharacters/>

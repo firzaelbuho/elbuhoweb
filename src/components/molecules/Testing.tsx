@@ -1,8 +1,8 @@
 import Button from "../atoms/Button"
 import TextInput from "../atoms/TextInput"
-import TextBlock from "../atoms/TextBlock"
+import TextBlock from "../atoms/Text"
 import Image from "../atoms/Image"
-import Text from "../atoms/Text"
+import Text from "../atoms/BBText"
 
 export default function Testing(){
     return (

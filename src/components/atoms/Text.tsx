@@ -1,21 +1,39 @@
 import React from 'react';
 import classNames from 'classnames';
+import { Size } from '@/models/Size';
+import { Color } from '@/models/Color';
+import { TextAlignment } from '@/models/Alignment';
+
+// Alignment hanya berfungsi jika isBlocked = true 
 
 interface TextProps {
   children: React.ReactNode;
- 
-  color?: 'primary' | 'secondary' | 'warning' | 'error' | 'success' | 'info' | 'accent'  |'base-content' |'primary-content' |'secondary-content' |'accent-content';
-  size?: 'base' |'inherit'| 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl' | '7xl' | '8xl' | '9xl';
+  alignment?: TextAlignment;
+  color?: Color;
+  size?: Size;
+  isBlock?:boolean;
 }
-
-const Text: React.FC<TextProps> = ({ children,  color="base-content", size="inherit" }) => {
+const Text: React.FC<TextProps> = ({ 
+  isBlock=false, 
+  children, 
+  alignment = TextAlignment.LEFT, 
+  color=Color.INHERIT, 
+  size=Size.BASE 
+}) => {
   const textClass = classNames(
    
+    `text-${alignment}`, 
     `text-${color}`,
     {[`text-${size}`]: size},
   );
 
-  return <div className={textClass}>{children}</div>;
+  if(isBlock){
+    return <div className={textClass}>{children}</div>;
+  } else {
+    return <span className={textClass}>{children}</span>;
+  }
+
+  
 };
 
 export default Text;

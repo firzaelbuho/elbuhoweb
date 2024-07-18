@@ -1,6 +1,10 @@
+import { Color } from "@/models/Color";
+import { InputStyle, InputType } from "@/models/Input";
+import { Size } from "@/models/Size";
 import classNames from "classnames";
 
 import React from 'react';
+
 
 
 
@@ -8,24 +12,25 @@ interface TextInputProps {
   value: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
-  type?: "text" | "number";
-  style?: "none" | "border" | "ghost";
-  color?: 'none' | 'primary' | 'secondary' | 'accent' | 'warning' | 'info' | 'success' | "error";
+  type?: InputType;
+  style?: InputStyle;
+  color?: Color;
   isDisabled?: boolean;
   placeHolder?:string;
-  size?: "xs"|"sm" | "md" | "lg";
+  size?: Size;
   
 }
 
 const TextInput: React.FC<TextInputProps> = ({ 
-  value="", onChange, 
+  value="", 
+  onChange, 
   placeholder, 
-  type = 'text', 
-  style="none" ,
-  color="none",
+  type = InputType.TEXT, 
+  style=InputStyle.NONE ,
+  color=Color.INHERIT,
   isDisabled = false,
   placeHolder,
-  size="md"
+  size=Size.MD
 }) => {
   
 
