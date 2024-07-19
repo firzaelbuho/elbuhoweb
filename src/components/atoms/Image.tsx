@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { BorderRadius, BorderStyle } from '@/models/Border';
 import { ImageAlignment } from '@/models/Alignment';
 import { ImageFit } from '@/models/Image';
+import { Color } from '@/models/Color';
 
 
 
@@ -14,8 +15,8 @@ interface ImageProps {
   fit?: ImageFit;
   alignment?: ImageAlignment;
   borderRadius?: BorderRadius;
-
-  borderColor?: string;
+  borderSize?:number
+  borderColor?: Color;
   borderStyle?: BorderStyle;
 }
 
@@ -25,16 +26,20 @@ const Image: React.FC<ImageProps> = ({
   width,
   height,
   fit = ImageFit.NONE,
-  alignment = ImageAlignment.LEFT,
+  alignment = ImageAlignment.CENTER,
   borderRadius = BorderRadius.MD,
-  borderStyle = BorderStyle.NONE
+  borderStyle = BorderStyle.NONE,
+  borderColor = Color.INHERIT,
+  borderSize = 4
 
 
 
   
 }) => {
   const imageClass = classNames(
-    `object-${fit}`,"solid-black", "border-4",
+    `object-${fit}`,
+    `border-${borderColor}`,
+    `border-${borderSize}`,
     {
       'mx-auto': alignment === 'center',
       'ml-auto': alignment === 'right',

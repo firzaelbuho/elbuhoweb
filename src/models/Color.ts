@@ -13,6 +13,16 @@ export enum Color {
     INHERIT = 'inherit',
     CURRENT = 'current',
     TRANSPARENT = 'transparent',
+    INFO = "info",
+    INFO_CONTENT = "info-content",
+    SUCCES = "success",
+    SUCCESS_CONTENT = "success-content",
+    WARNING = "warning",
+    WARNING_CONTENT = "warning-content",
+    ERROR = "error",
+    ERROR_CONTENT ="error-containt",
+
+
     BLACK = 'black',
     WHITE = 'white',
     SLATE_50 = 'slate-50',

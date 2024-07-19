@@ -9,7 +9,7 @@ import { ButtonStyle } from "@/models/Button";
 const RtiWelcome:React.FC = ()=>{
     return (
         <div>
-        <Text isBlock={true } alignment={TextAlignment.JUSTIFY} color={Color.PRIMARY}>
+        <Text isBlock={true } color={Color.NEUTRAL} alignment={TextAlignment.JUSTIFY} >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.

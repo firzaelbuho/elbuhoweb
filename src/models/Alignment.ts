@@ -10,3 +10,28 @@ export enum ImageAlignment {
     RIGHT = 'right',
     CENTER = 'center',
   }
+
+  export enum ContentAlignment {
+    NORMAL = 'normal',
+    CENTER = 'center',
+    START = 'start',
+    END = 'end',
+    BETWEEN = 'between',
+    AROUND = 'around',
+    EVENLY = 'evenly',
+    BASELINE = 'baseline',
+    STRETCH = 'stretch'
+  }
+
+  export enum FlexAlignment {
+    NORMAL = 'normal',
+    CENTER = 'center',
+    START = 'start',
+    END = 'end',
+    BETWEEN = 'between',
+    AROUND = 'around',
+    EVENLY = 'evenly',
+    BASELINE = 'baseline',
+    STRETCH = 'stretch'
+  }
+  

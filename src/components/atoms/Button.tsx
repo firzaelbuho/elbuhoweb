@@ -1,11 +1,14 @@
 // import React from 'react';
+
+
+
 import { ButtonShape, ButtonStyle, ButtonType } from "@/models/Button";
 import { Color } from "@/models/Color";
 import { Size } from "@/models/Size";
 import classNames from "classnames";
 
 interface ButtonProps {
-  label: string;
+  label?: string;
   onClick?: () => void;
   type?: ButtonType;
   color?: Color  ;
@@ -20,7 +23,8 @@ interface ButtonProps {
 
 
 const Button: React.FC<ButtonProps> = ({ 
-  label, onClick, 
+  label = "Button", 
+  onClick, 
   type = ButtonType.BUTTON, 
   color= Color.INHERIT , 
   size= Size.MD, 

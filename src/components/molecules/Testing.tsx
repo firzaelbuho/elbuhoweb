@@ -1,5 +1,5 @@
 import Button from "../atoms/Button"
-import TextInput from "../atoms/TextInput"
+import TextInput from "../atoms/Input"
 import TextBlock from "../atoms/Text"
 import Image from "../atoms/Image"
 import Text from "../atoms/BBText"
