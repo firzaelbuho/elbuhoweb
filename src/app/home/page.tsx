@@ -1,4 +1,4 @@
-import ThemeChanger from "@/components/molecules/ThemeChanger"
+import ThemeChanger from "@/components/molecules/general/ThemeChanger"
 import Navbar from "@/components/Navbar"
 
 export default function Page() {

@@ -2,46 +2,44 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Color } from '@/models/Color';
-import {Dimension, Direction } from '@/models/Layout';
+import {Dimension } from '@/models/Layout';
 import { ContentAlignment } from '@/models/Alignment';
 
 interface GridProps {
     children: React.ReactNode;
     gap?:number;
-    count:number;
-    color?:Color;
+    cols?:1|2|3|4|5|6|7|8|9|10|11|12;
+    background?:Color;
     padding?:number;
     margin?:number;
-    direction: Direction;
-    alignment? : ContentAlignment;
+    // direction: Direction;
+    horizontalAlignment? : ContentAlignment;
     width? : Dimension;
     height?: Dimension;
 }
 
-const Grid: React.FC<GridProps> = ({ 
-  direction,children, 
-  alignment = ContentAlignment.NORMAL,
-  gap = 4, count , 
-  color = Color.INHERIT, margin, padding,
+const GridColumn: React.FC<GridProps> = ({ 
+  children, 
+  horizontalAlignment = ContentAlignment.NORMAL,
+  gap = 0, cols=1 , 
+  background = Color.INHERIT, margin, padding,
   height = Dimension.FULL,
   width = Dimension.FULL
 }) => {
   
-  let flow = direction === Direction.HORIZONTAL ? "cols" : "rows";
-  // alert(   `grid-${flow}-${count}`)
+ 
   const gridClass = classNames(
     "grid", 
-    `bg-${color}`,
+    `bg-${background}`,
     `m-${margin}`,
     `p-${padding}`,
     `gap-${gap}`,
-    `content-${alignment}`,
+    `content-${horizontalAlignment}`,
     
     `h-${height}`,
     `w-${width}`,
     
-    `grid-${flow}-${count}`,
-    { "grid-flow-col" : direction === Direction.VERTICAL}
+    `grid-cols-${cols}`
    
     
   );
@@ -53,4 +51,4 @@ const Grid: React.FC<GridProps> = ({
   );
 };
 
-export default Grid;
+export default GridColumn;

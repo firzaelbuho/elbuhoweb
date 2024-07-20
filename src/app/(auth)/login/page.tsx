@@ -1,6 +1,6 @@
-import ThemeChanger from "@/components/molecules/ThemeChanger"
-import LoginForm from "@/components/molecules/LoginForm"
-import RegisterForm from "@/components/molecules/RegisterForm"
+import ThemeChanger from "@/components/molecules/general/ThemeChanger"
+import LoginForm from "@/components/molecules/auth/LoginForm"
+import RegisterForm from "@/components/molecules/auth/RegisterForm"
 import ApiTest from "@/components/ApiTest"
 
 export default function Page() {

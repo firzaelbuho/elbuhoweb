@@ -10,7 +10,7 @@ interface GridProps {
     rowSpan?:number;
     padding?:number;
     margin?:number;
-    color?:Color;
+    background?:Color;
     width? : Dimension;
     height?: Dimension;
 }
@@ -19,13 +19,13 @@ const GridCell: React.FC<GridProps> = ({
     children, margin, padding,
     colSpan = 1,
     rowSpan = 1,
-    color = Color.INHERIT,
+    background = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL
 }) => {
   const gridClass = classNames(
     "grid", 
-    `bg-${color}`,
+    `bg-${background}`,
     `col-span-${colSpan}`,
     `row-span-${rowSpan}`,
     `m-${margin}`,

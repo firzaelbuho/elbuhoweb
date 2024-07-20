@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
-import RegisterForm from '@/components/molecules/RegisterForm';
-import ThemeChanger from '@/components/molecules/ThemeChanger';
+import RegisterForm from '@/components/molecules/auth/RegisterForm';
+import ThemeChanger from '@/components/molecules/general/ThemeChanger';
 
 export default function Page(){
   return (

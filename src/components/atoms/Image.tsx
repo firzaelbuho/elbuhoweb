@@ -4,33 +4,37 @@ import { BorderRadius, BorderStyle } from '@/models/Border';
 import { ImageAlignment } from '@/models/Alignment';
 import { ImageFit } from '@/models/Image';
 import { Color } from '@/models/Color';
+import { Shadow } from '@/models/Shadow';
+import { Dimension } from '@/models/Layout';
 
 
 
 interface ImageProps {
-  url: string;
+  url?: string;
   alt?:string
-  width?: string;
-  height?: string;
+  width?: Dimension;
+  height?: Dimension;
   fit?: ImageFit;
-  alignment?: ImageAlignment;
+  imageAlignment?: ImageAlignment;
   borderRadius?: BorderRadius;
   borderSize?:number
   borderColor?: Color;
   borderStyle?: BorderStyle;
+  shadow?: Shadow;
 }
 
 const Image: React.FC<ImageProps> = ({
-  url,
+  url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPKSe_z6cgW-yTyEBOILtedGE1hyCFBHSKg&s",
   alt ="",
-  width,
-  height,
-  fit = ImageFit.NONE,
-  alignment = ImageAlignment.CENTER,
-  borderRadius = BorderRadius.MD,
+  width = Dimension.FULL,
+  height = Dimension.AUTO,
+  fit = ImageFit.COVER,
+  imageAlignment = ImageAlignment.LEFT,
+  borderRadius = BorderRadius.NONE,
   borderStyle = BorderStyle.NONE,
   borderColor = Color.INHERIT,
-  borderSize = 4
+  borderSize = 4,
+  shadow = Shadow.NONE
 
 
 
@@ -40,21 +44,25 @@ const Image: React.FC<ImageProps> = ({
     `object-${fit}`,
     `border-${borderColor}`,
     `border-${borderSize}`,
+    `h-${height}`,
+    `w-${width}`,
     {
-      'mx-auto': alignment === 'center',
-      'ml-auto': alignment === 'right',
-      'mr-auto': alignment === 'left',
+      'mx-auto': imageAlignment === ImageAlignment.CENTER,
+      'ml-auto': imageAlignment === ImageAlignment.RIGHT,
+      'mr-auto': imageAlignment === ImageAlignment.LEFT,
     },
-    {
-      'rounded-none': borderRadius === 'none',
-      'rounded-sm': borderRadius === 'sm',
-      'rounded-md': borderRadius === 'md',
-      'rounded-lg': borderRadius === 'lg',
-      'rounded-xl': borderRadius === 'xl',
-      'rounded-2xl': borderRadius === '2xl',
-      'rounded-3xl': borderRadius === '3xl',
-      'rounded-full': borderRadius === 'full',
-    },
+   `${shadow}`,
+    `rounded-${borderRadius}`,
+    // {
+    //   'rounded-none': borderRadius === 'none',
+    //   'rounded-sm': borderRadius === 'sm',
+    //   'rounded-md': borderRadius === 'md',
+    //   'rounded-lg': borderRadius === 'lg',
+    //   'rounded-xl': borderRadius === 'xl',
+    //   'rounded-2xl': borderRadius === '2xl',
+    //   'rounded-3xl': borderRadius === '3xl',
+    //   'rounded-full': borderRadius === 'full',
+    // },
     {
         'border-none': borderStyle === BorderStyle.NONE,
         'border-solid': borderStyle === BorderStyle.SOLID,
@@ -70,7 +78,7 @@ const Image: React.FC<ImageProps> = ({
       width={width}
       height={height}
       className={imageClass}
-      style={{ display: 'block', width, height }}
+      style={{ display: 'block'}}
     />
   );
 };

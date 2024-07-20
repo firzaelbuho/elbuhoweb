@@ -1,15 +1,15 @@
 
 "use client"
 
-import ThemeChanger from "@/components/molecules/ThemeChanger"
+import ThemeChanger from "@/components/molecules/general/ThemeChanger"
 import RtiNavbar from "@/components/organisms/RtiNavbar"
-import Testing from "@/components/molecules/Testing"
+
 import Image from "@/components/atoms/Image"
 import TextBlock from "@/components/atoms/Text"
-import RtiJumbotron from "@/components/molecules/rti/RtiJumbotron"
-import RtiWelcome from "@/components/molecules/rti/RtiWelcome"
+import Jumbotron from "@/components/molecules/rti/Jumbotron"
+import Welcome from "@/components/molecules/rti/Welcome"
 import Footer from "@/components/organisms/Footer"
-import RtiCharacters from "@/components/molecules/rti/RtiCharacters"
+import Characters from "@/components/molecules/rti/Characters"
 
 
 
@@ -29,13 +29,13 @@ export default function RtiHomePage() {
         
         {/* jumbotron */}
         <div className="mt-2">
-          <RtiJumbotron />
+          <Jumbotron />
         </div>   
 
         {/* introduction */}
         <div className=" p-5">
           <div className="container w-2/3 mx-auto">
-            <RtiWelcome />
+            <Welcome />
           </div>
         </div>   
 
@@ -43,20 +43,20 @@ export default function RtiHomePage() {
 
         <div className="py-5  bg-accent bg-">
           <div className="container w-2/3 mx-auto text-accent-content">
-          <RtiWelcome />
-          <RtiCharacters/>
+          <Welcome />
+          <Characters/>
           </div>
         </div>   
 
         <div className="  bg-primary">
           <div className="container w-2/3 mx-auto text-primary-content">
-          <RtiWelcome />
+          <Welcome />
           </div>
         </div>   
 
         <div className="bg-accent">
           <div className="container w-2/3 mx-auto text-accent-content">
-          <RtiWelcome />
+          <Welcome />
           </div>
         </div>   
 

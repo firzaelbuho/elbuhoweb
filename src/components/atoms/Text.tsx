@@ -3,26 +3,33 @@ import classNames from 'classnames';
 import { Size } from '@/models/Size';
 import { Color } from '@/models/Color';
 import { TextAlignment } from '@/models/Alignment';
+import { Dimension } from '@/models/Layout';
 
 // Alignment hanya berfungsi jika isBlocked = true 
 
 interface TextProps {
   children: React.ReactNode;
-  alignment?: TextAlignment;
+  textAlignment?: TextAlignment;
   color?: Color;
   size?: Size;
   isBlock?:boolean;
+  margin?:Dimension;
+  padding?:Dimension;
 }
 const Text: React.FC<TextProps> = ({ 
   isBlock=false, 
   children, 
-  alignment = TextAlignment.LEFT, 
+  textAlignment = TextAlignment.LEFT, 
   color=Color.INHERIT, 
-  size=Size.BASE 
+  size=Size.BASE ,
+  margin, padding
 }) => {
   const textClass = classNames(
    
-    `text-${alignment}`, 
+    `text-${textAlignment}`, 
+    `m-${margin}`,
+    `p-${padding}`,
+    // "text-center",
     `text-${color}`,
     {[`text-${size}`]: size},
   );

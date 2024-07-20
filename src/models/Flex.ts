@@ -1,12 +1,4 @@
-export enum Direction {
-    ROW = 'row',
-    ROW_REVERSE = 'row-reverse',
-    COL = 'col',
-    COL_REVERSE = 'col-reverse'
-  }
-  
-
-export enum Dimension {
+export enum Basis {
     // Numeric values
      // Numeric values
   '0D' = '0',
@@ -43,12 +35,7 @@ export enum Dimension {
     // Special values
     AUTO = 'auto',
     FULL = 'full',
-    SCREEN = 'screen',
-    MIN = 'min',
-    MAX = 'max',
-    FIT = 'fit',
-    PX = 'px',
-  
+   
     // Fractional values
     '1/2' = '1/2',
     '1/3' = '1/3',
@@ -78,11 +65,9 @@ export enum Dimension {
     '11/12' = '11/12'
   }
 
-  export enum Overflow {
-    AUTO = 'auto',
-    HIDDEN = 'hidden',
-    VISIBLE = 'visible',
-    SCROLL = 'scroll'
+  export enum FlexWrap {
+    NO_WRAP = 'nowrap',
+    WRAP = 'wrap',
+    WRAP_REVERSE = 'wrap-reverse'
   }
-  
   
