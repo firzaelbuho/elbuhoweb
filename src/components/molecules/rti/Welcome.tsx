@@ -4,22 +4,32 @@ import { Color } from "@/models/Color";
 import { TextAlignment } from "@/models/Alignment";
 import Button from "@/components/atoms/Button";
 import { ButtonStyle } from "@/models/Button";
+import Flex from "@/components/atoms/Flex";
+import GridColumn from "@/components/atoms/GridColumn";
+import GridCell from "@/components/atoms/GridCell";
+import { Size } from "@/models/Size";
+import { TextLevel } from "@/models/Typography";
 
 
 const Welcome:React.FC = ()=>{
     return (
-        <div>
-        <Text isBlock={true } color={Color.NEUTRAL} textAlignment={TextAlignment.JUSTIFY} >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
-          </Text>
+        <GridColumn cols={12}>
+            <GridCell colSpan={4}>
+                <Text textLevel={TextLevel.H2}>WELCOME</Text>
+            </GridCell>
+            <GridCell colSpan={8}>
+                <Text color={Color.BASE_CONTENT} textAlignment={TextAlignment.JUSTIFY} >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam facere dolorem nesciunt nemo harum, fuga tempore blanditiis vel modi voluptatem aliquid amet veniam recusandae numquam unde incidunt sequi illo similique.
+               
+                </Text> 
+            </GridCell>
+        </GridColumn>
         
       
-        </div>
-    )
+        )
+        
 }
 
 export default Welcome;

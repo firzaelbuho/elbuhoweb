@@ -20,12 +20,16 @@ const ImageChar: React.FC<ImageCharProps> = ({
     title = "John Doe",
   
  }) => {
-  const imagecharClass = classNames({
-    
-  });
+  const imagecharClass = classNames(
+    "card", 
+    "card-compact",
+    "bg-base-100",
+    "shadow-xl",
+    "w-full"
+  );
 
   return (
-        <div className="card card-compact bg-base-100 w-96 shadow-xl">
+        <div className={imagecharClass}>
         <figure>
             <Image 
                 imageAlignment={ImageAlignment.CENTER}
@@ -36,7 +40,7 @@ const ImageChar: React.FC<ImageCharProps> = ({
         </figure>
         <div className="card-body">
 
-            <h2 className="card-title text-center">
+            <h2 className="card-title text-center text-base-content">
                 {title}
                
             </h2>

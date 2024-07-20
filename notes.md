@@ -1,9 +1,12 @@
 # Notes
 
 - tailwind classname tidak bisa dimodif secara dinamis (contoh : btn-${color}). harus masukan ke safelist dulu pada tailwind.config.json
-- Alignment pada FC Text hanya berfungsi jika isBlocked = true 
+
 - kelas "grid-flow-col" khusus diperlukan kalau pakai grid-rows
 
+# Typography
+- isBlocked jadikan true agar menjadi blok (div) dan  Alignment pada FC Text hanya berfungsi jika isBlocked = true 
+- ketika textLevel adalah heading (H1-H6) maka atribut bold dan size pada props diabaikan, pake ukuran default mereka
 
 # Layout
 - w-1 => 0.25 rem => 24px

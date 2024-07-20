@@ -11,6 +11,11 @@ import Welcome from "@/components/molecules/rti/Welcome"
 import Footer from "@/components/organisms/Footer"
 import Characters from "@/components/molecules/rti/Characters"
 
+import { motion } from 'framer-motion';
+import AnimationOnScroll from "@/components/anims/AnimationOnScroll"
+import { AnimationStyle } from "@/models/Animation"
+
+
 
 
 export default function RtiHomePage() {
@@ -39,26 +44,25 @@ export default function RtiHomePage() {
           </div>
         </div>   
 
-        {/* introduction */}
+        {/* Content */}
 
+        
         <div className="py-5  bg-accent bg-">
           <div className="container w-2/3 mx-auto text-accent-content">
-          <Welcome />
-          <Characters/>
+          {/* <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            >
+              <Characters/>
+            </motion.div>
+          
+           */}
+           <AnimationOnScroll anim={AnimationStyle.SWIPE_RIGHT} duration={1}><Characters/></AnimationOnScroll>
           </div>
         </div>   
 
-        <div className="  bg-primary">
-          <div className="container w-2/3 mx-auto text-primary-content">
-          <Welcome />
-          </div>
-        </div>   
-
-        <div className="bg-accent">
-          <div className="container w-2/3 mx-auto text-accent-content">
-          <Welcome />
-          </div>
-        </div>   
+       
 
         {/* Footer */}
         <div className=" bg-neutral">

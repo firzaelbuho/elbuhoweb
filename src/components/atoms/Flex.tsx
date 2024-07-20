@@ -5,12 +5,13 @@ import { Color } from '@/models/Color';
 import { Dimension, Direction, Overflow } from '@/models/Layout';
 import { FlexWrap } from '@/models/Flex';
 import { ContentAlignment } from '@/models/Alignment';
+import { Margin, Padding } from '@/models/class/Layout';
 
 interface FlexProps {
     children: React.ReactNode;
     background?:Color;
-    padding?:number;
-    margin?:number;
+    padding?:Padding;
+    margin?:Margin;
     alignment? : ContentAlignment;
     width? : Dimension;
     height?: Dimension;
@@ -22,7 +23,8 @@ interface FlexProps {
 
 const Flex: React.FC<FlexProps> = ({
     children,
-    margin, padding,
+    margin = new Margin({all:0}), 
+    padding = new Margin({all:0}),
     background = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL,
@@ -40,8 +42,19 @@ const Flex: React.FC<FlexProps> = ({
     `justify-${alignment}`,
     `flex-${direction}`,
     `bg-${background}`,
-    `m-${margin}`,
-    `p-${padding}`,
+
+    // Padding
+    `mt-${margin.top}`,
+    `mb-${margin.bottom}`,
+    `ml-${margin.left}`,
+    `mr-${margin.right}`,
+
+    // Margin
+    `pt-${padding.top}`,
+    `pb-${padding.bottom}`,
+    `pl-${padding.left}`,
+    `pr-${padding.right}`,
+
     `h-${height}`,
     `w-${width}`,
     `gap-${gap}`,

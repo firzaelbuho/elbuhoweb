@@ -3,20 +3,23 @@ import React from 'react';
 import classNames from 'classnames';
 import { Dimension } from '@/models/Layout';
 import { Color } from '@/models/Color';
+import { Margin, Padding } from '@/models/class/Layout';
 
 interface GridProps {
     children: React.ReactNode;
     colSpan?:number;
     rowSpan?:number;
-    padding?:number;
-    margin?:number;
+    padding?:Padding;
+    margin?:Margin;
     background?:Color;
     width? : Dimension;
     height?: Dimension;
 }
 
 const GridCell: React.FC<GridProps> = ({ 
-    children, margin, padding,
+    children, 
+    margin = new Margin({all:0}), 
+    padding = new Margin({all:0}),
     colSpan = 1,
     rowSpan = 1,
     background = Color.INHERIT,
@@ -28,10 +31,23 @@ const GridCell: React.FC<GridProps> = ({
     `bg-${background}`,
     `col-span-${colSpan}`,
     `row-span-${rowSpan}`,
-    `m-${margin}`,
-    `p-${padding}`,
+  
     `h-${height}`,
-    `w-${width}`
+    `w-${width}`,
+
+    // Padding
+    `mt-${margin.top}`,
+    `mb-${margin.bottom}`,
+    `ml-${margin.left}`,
+    `mr-${margin.right}`,
+
+    // Margin
+    `pt-${padding.top}`,
+    `pb-${padding.bottom}`,
+    `pl-${padding.left}`,
+    `pr-${padding.right}`,
+
+
   );
 
   return (

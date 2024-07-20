@@ -6,12 +6,14 @@ import { ContentAlignment } from '@/models/Alignment';
 import { Dimension } from '@/models/Layout';
 import { BorderRadius, BorderStyle } from '@/models/Border';
 import { Shadow } from '@/models/Shadow';
+import { Padding, Margin } from '@/models/class/Layout';
+
 
 interface BoxProps {
     children: React.ReactNode;
     background?:Color;
-    padding?:number;
-    margin?:number;
+    padding?:Padding;
+    margin?:Margin;
     alignment? : ContentAlignment;
     width? : Dimension;
     height?: Dimension;
@@ -24,7 +26,8 @@ interface BoxProps {
 
 const Box: React.FC<BoxProps> = ({ 
     children,
-    margin, padding,
+    margin = new Margin({all:0}), 
+    padding = new Margin({all:0}),
     background = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL,
@@ -38,8 +41,19 @@ const Box: React.FC<BoxProps> = ({
  }) => {
   const boxClass = classNames(
     `bg-${background}`,
-    `m-${margin}`,
-    `p-${padding}`,
+
+    // Padding
+    `mt-${margin.top}`,
+    `mb-${margin.bottom}`,
+    `ml-${margin.left}`,
+    `mr-${margin.right}`,
+
+    // Margin
+    `pt-${padding.top}`,
+    `pb-${padding.bottom}`,
+    `pl-${padding.left}`,
+    `pr-${padding.right}`,
+
     `h-${height}`,
     `w-${width}`,
 

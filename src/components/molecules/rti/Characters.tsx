@@ -1,3 +1,7 @@
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
+
+
 
 import React from 'react';
 import classNames from 'classnames';
@@ -24,6 +28,8 @@ import { Basis, FlexWrap } from '@/models/Flex';
 import Box from '@/components/atoms/Box';
 import { Shadow } from '@/models/Shadow';
 import ImageChar from './ImageChar';
+import { Padding, Margin } from '@/models/class/Layout';
+import { TextLevel } from '@/models/Typography';
 
 interface RtiCharactersProps {
   
@@ -33,28 +39,24 @@ const Characters: React.FC<RtiCharactersProps> = ({  }) => {
   const rticharactersClass = classNames({
     
   });
+  const items = Array.from({ length: 64 })
 
   return (
+
     
     <div>
-     
-    <Flex direction={Direction.ROW}  alignment={ContentAlignment.START} gap={4} wrap={FlexWrap.WRAP}>
-      <FlexChild basis={Basis['12D']}>
-        <ImageChar />
+    <Text padding={new Padding({all:5})} textLevel={TextLevel.H3}>Characters :</Text>
+
+    <Flex direction={Direction.ROW}  alignment={ContentAlignment.START} gap={0} wrap={FlexWrap.WRAP}>
+      {items.map((_,x)=>(
+        
+      <FlexChild basis={Basis['1/5']}  padding={new Padding({all:5})} >
+        <a href="google.com">
+        <ImageChar title={"John Doe #"+x} />
+        </a>
+       
       </FlexChild>
-      <FlexChild basis={Basis['12D']}>
-        <ImageChar />
-      </FlexChild>
-      <FlexChild basis={Basis['12D']}>
-        <ImageChar />
-      </FlexChild>
-      <FlexChild basis={Basis['12D']}>
-        <ImageChar />
-      </FlexChild>
-      
-    
-     
-      
+      ))}
     </Flex> 
       
      
