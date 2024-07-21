@@ -10,6 +10,7 @@ export enum Color {
     SECONDARY_CONTENT = 'secondary-content',
     NEUTRAL_CONTENT = 'neutral-content',
     BASE_CONTENT = 'base-content',
+    ACCENT_CONTENT = 'accent-content',
     INHERIT = 'inherit',
     CURRENT = 'current',
     TRANSPARENT = 'transparent',

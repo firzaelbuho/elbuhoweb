@@ -4,6 +4,10 @@
 
 - kelas "grid-flow-col" khusus diperlukan kalau pakai grid-rows
 
+# Table
+## Table -> TRow -> TCell
+- isTabled on => mengaktifkan kelas table bawaan tailwind/daisyui
+
 # Typography
 - isBlocked jadikan true agar menjadi blok (div) dan  Alignment pada FC Text hanya berfungsi jika isBlocked = true 
 - ketika textLevel adalah heading (H1-H6) maka atribut bold dan size pada props diabaikan, pake ukuran default mereka

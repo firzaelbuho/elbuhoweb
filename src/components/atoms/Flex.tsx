@@ -8,7 +8,7 @@ import { ContentAlignment } from '@/models/enum/Alignment';
 import { Margin, Padding } from '@/models/class/Layout';
 
 interface FlexProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     background?:Color;
     padding?:Padding;
     margin?:Margin;
@@ -24,7 +24,7 @@ interface FlexProps {
 const Flex: React.FC<FlexProps> = ({
     children,
     margin = new Margin({all:undefined}), 
-    padding = new Margin({all:undefined}),
+    padding = new Padding({all:undefined}),
     background = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL,
@@ -48,17 +48,17 @@ const Flex: React.FC<FlexProps> = ({
     `flex-${direction}`,
     `bg-${background}`,
 
-    // Padding
-    `mt-${margin.top}`,
-    `mb-${margin.bottom}`,
-    `ml-${margin.left}`,
-    `mr-${margin.right}`,
-
-    // Margin
-    `pt-${padding.top}`,
-    `pb-${padding.bottom}`,
-    `pl-${padding.left}`,
-    `pr-${padding.right}`,
+     // Margin
+     `mt-${margin.top}`,
+     `mb-${margin.bottom}`,
+     `ml-${margin.left}`,
+     `mr-${margin.right}`,
+ 
+     // Padding
+     `pt-${padding.top}`,
+     `pb-${padding.bottom}`,
+     `pl-${padding.left}`,
+     `pr-${padding.right}`,
 
     `h-${height}`,
     `w-${width}`,

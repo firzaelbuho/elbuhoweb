@@ -7,7 +7,7 @@ import { ContentAlignment } from '@/models/enum/Alignment';
 import { Margin, Padding } from '@/models/class/Layout';
 
 interface GridProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     gap?:number;
     cols?:1|2|3|4|5|6|7|8|9|10|11|12;
     background?:Color;
@@ -25,7 +25,7 @@ const GridColumn: React.FC<GridProps> = ({
   gap = 0, cols=1 , 
   background = Color.INHERIT, 
   margin = new Margin({all:undefined}), 
-  padding = new Margin({all:undefined}),
+  padding = new Padding({all:undefined}),
   height = Dimension.FULL,
   width = Dimension.FULL
 }) => {
@@ -43,17 +43,17 @@ const GridColumn: React.FC<GridProps> = ({
     
     `grid-cols-${cols}`,
 
-    // Padding
-    `mt-${margin.top}`,
-    `mb-${margin.bottom}`,
-    `ml-${margin.left}`,
-    `mr-${margin.right}`,
+   // Margin
+   `mt-${margin.top}`,
+   `mb-${margin.bottom}`,
+   `ml-${margin.left}`,
+   `mr-${margin.right}`,
 
-    // Margin
-    `pt-${padding.top}`,
-    `pb-${padding.bottom}`,
-    `pl-${padding.left}`,
-    `pr-${padding.right}`,
+   // Padding
+   `pt-${padding.top}`,
+   `pb-${padding.bottom}`,
+   `pl-${padding.left}`,
+   `pr-${padding.right}`,
    
     
   );

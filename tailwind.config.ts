@@ -36,6 +36,7 @@ const config: Config = {
     {pattern: /flex-(row|row-reverse|col|col-reverse)/} ,
     { pattern: /flex-(nowrap|wrap|wrap-reverse)/ },
     // Alignment
+    { pattern: /^(align-(top|middle|bottom|baseline))$/},
     { pattern: /^text-(left|right|center|justify)$/ },
     { pattern: /(content|flex|justify|items)-(normal|center|start|end|between|around|evenly|baseline|stretch)/ },
 

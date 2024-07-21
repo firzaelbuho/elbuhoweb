@@ -10,7 +10,7 @@ import { TextLevel } from '@/models/enum/Typography';
 // Alignment hanya berfungsi jika isBlocked = true 
 
 interface TextProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   textAlignment?: TextAlignment;
   color?: Color;
   size?: Size;
@@ -23,7 +23,7 @@ const Text: React.FC<TextProps> = ({
  
   children, 
   textAlignment = TextAlignment.LEFT, 
-  color=Color.INHERIT, 
+  color, 
   size=Size.BASE ,
   textLevel = TextLevel.PHARAGRAPH,
   margin = new Margin({all:undefined}), 

@@ -6,7 +6,7 @@ import { Color } from '@/models/enum/Color';
 import { Margin, Padding } from '@/models/class/Layout';
 
 interface GridProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     colSpan?:number;
     rowSpan?:number;
     padding?:Padding;
@@ -19,7 +19,7 @@ interface GridProps {
 const GridCell: React.FC<GridProps> = ({ 
     children, 
     margin = new Margin({all:undefined}), 
-    padding = new Margin({all:undefined}),
+    padding = new Padding({all:undefined}),
     colSpan = 1,
     rowSpan = 1,
     background = Color.INHERIT,
@@ -35,17 +35,17 @@ const GridCell: React.FC<GridProps> = ({
     `h-${height}`,
     `w-${width}`,
 
-    // Padding
-    `mt-${margin.top}`,
-    `mb-${margin.bottom}`,
-    `ml-${margin.left}`,
-    `mr-${margin.right}`,
+   // Margin
+   `mt-${margin.top}`,
+   `mb-${margin.bottom}`,
+   `ml-${margin.left}`,
+   `mr-${margin.right}`,
 
-    // Margin
-    `pt-${padding.top}`,
-    `pb-${padding.bottom}`,
-    `pl-${padding.left}`,
-    `pr-${padding.right}`,
+   // Padding
+   `pt-${padding.top}`,
+   `pb-${padding.bottom}`,
+   `pl-${padding.left}`,
+   `pr-${padding.right}`,
 
 
   );
