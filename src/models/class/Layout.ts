@@ -9,13 +9,13 @@ interface MarginOptions {
 }
 
 export class Margin {
-    top: number;
-    bottom: number;
-    left: number;
-    right: number;
+    top: number | undefined;
+    bottom: number | undefined;
+    left: number | undefined;
+    right: number | undefined;
 
     constructor(options: MarginOptions = {}) {
-        const all = options.all ?? 0;
+        const all = options.all ?? undefined;
         this.top = options.top ?? options.y ?? all;
         this.bottom = options.bottom ?? options.y ?? all;
         this.left = options.left ?? options.x ?? all;
@@ -34,13 +34,13 @@ interface PaddingOptions {
 }
 
 export class Padding {
-    top: number;
-    bottom: number;
-    left: number;
-    right: number;
+    top: number | undefined;
+    bottom: number | undefined;
+    left: number | undefined;
+    right: number | undefined;
 
     constructor(options: PaddingOptions = {}) {
-        const all = options.all ?? 0;
+        const all = options.all ?? undefined;
         this.top = options.top ?? options.y ?? all;
         this.bottom = options.bottom ?? options.y ?? all;
         this.left = options.left ?? options.x ?? all;

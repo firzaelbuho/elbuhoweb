@@ -12,70 +12,69 @@ import Footer from "@/components/organisms/Footer"
 import Characters from "@/components/molecules/rti/Characters"
 
 import { motion } from 'framer-motion';
-import AnimationOnScroll from "@/components/anims/AnimationOnScroll"
-import { AnimationStyle } from "@/models/Animation"
+import AnimationOnScroll from "@/components/anims/Motion"
+import { AnimationStyle } from "@/models/enum/Animation"
+import Motion from "@/components/anims/Motion"
+import Box from "@/components/atoms/Box"
+import { ContentAlignment, SelfAlignment } from "@/models/enum/Alignment"
+import { Dimension } from "@/models/enum/Layout"
+import { Color } from "@/models/enum/Color"
+import Container from "@/components/atoms/Container"
+import { Padding, Margin } from "@/models/class/Layout"
 
 
 
 
 export default function RtiHomePage() {
 
-   
+   const margin = new Margin({y:16})
+   const padding = new Padding({y:16})
 
     return (
   
-      <div className="">
+      <Container>
+
+        
 
         {/* navbar */}
-        <div>
+        <Container width={Dimension["2/3"]}>
           <RtiNavbar />
           <ThemeChanger />
-        </div>
+        </Container>
         
         {/* jumbotron */}
-        <div className="mt-2">
+        <Container width={Dimension["2/3"]}>
           <Jumbotron />
-        </div>   
+        </Container>   
 
         {/* introduction */}
-        <div className=" p-5">
-          <div className="container w-2/3 mx-auto">
-            <Welcome />
-          </div>
-        </div>   
+        <Container width={Dimension["2/3"]} padding={padding}>
+          <Welcome />
+        </Container>   
 
         {/* Content */}
 
-        
-        <div className="py-5  bg-accent bg-">
-          <div className="container w-2/3 mx-auto text-accent-content">
-          {/* <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            >
-              <Characters/>
-            </motion.div>
-          
-           */}
-           <AnimationOnScroll anim={AnimationStyle.SWIPE_RIGHT} duration={1}><Characters/></AnimationOnScroll>
-          </div>
-        </div>   
+        <Container background={Color.ACCENT}  padding={padding}>
+          <Container  width={Dimension["2/3"]}>
+            <Motion anim={AnimationStyle.SWIPE_UP_IN}><Characters/></Motion>
+          </Container>
+        </Container>   
 
        
 
         {/* Footer */}
-        <div className=" bg-neutral">
-          <div className="container w-2/3 mx-auto ">
-          <Footer />
-          </div>
-        </div> 
+        <Container background={Color.NEUTRAL}>
+          <Container width={Dimension["2/3"]}>    
+            <Footer />
+          </Container> 
+        </Container>
+        
 
 
 
        
 
 
-      </div>
+      </Container>
     )
   }

@@ -1,10 +1,10 @@
 
 import React from 'react';
 import classNames from 'classnames';
-import { Color } from '@/models/Color';
-import { Dimension, Direction, Overflow } from '@/models/Layout';
-import { FlexWrap } from '@/models/Flex';
-import { ContentAlignment } from '@/models/Alignment';
+import { Color } from '@/models/enum/Color';
+import { Dimension, Direction, Overflow } from '@/models/enum/Layout';
+import { FlexWrap } from '@/models/enum/Flex';
+import { ContentAlignment } from '@/models/enum/Alignment';
 import { Margin, Padding } from '@/models/class/Layout';
 
 interface FlexProps {
@@ -23,8 +23,8 @@ interface FlexProps {
 
 const Flex: React.FC<FlexProps> = ({
     children,
-    margin = new Margin({all:0}), 
-    padding = new Margin({all:0}),
+    margin = new Margin({all:undefined}), 
+    padding = new Margin({all:undefined}),
     background = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL,
@@ -34,6 +34,11 @@ const Flex: React.FC<FlexProps> = ({
     direction,
     alignment = ContentAlignment.START
   }) => {
+  
+  if(wrap != FlexWrap.NO_WRAP){
+    overflow = Overflow.HIDDEN;
+  }
+    
   const flexrowClass = classNames(
     // "overflow-scroll",
     "flex", 

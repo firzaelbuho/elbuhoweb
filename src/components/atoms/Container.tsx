@@ -22,9 +22,10 @@ interface BoxProps {
     borderSize?:number
     borderColor?: Color;
     borderStyle?: BorderStyle;
+    isContainer?: boolean;
 }
 
-const Box: React.FC<BoxProps> = ({ 
+const Container: React.FC<BoxProps> = ({ 
     children,
     margin = new Margin({all:undefined}), 
     padding = new Margin({all:undefined}),
@@ -36,7 +37,8 @@ const Box: React.FC<BoxProps> = ({
     borderRadius = BorderRadius.NONE,
     borderStyle = BorderStyle.NONE,
     borderColor = Color.INHERIT,
-    borderSize = 4
+    borderSize = 4,
+    isContainer = false
   
  }) => {
   const boxClass = classNames(
@@ -76,7 +78,12 @@ const Box: React.FC<BoxProps> = ({
       "ml-auto": selfAlignment === SelfAlignment.RIGHT,
       "mr-auto": selfAlignment === SelfAlignment.LEFT,
       
-  }
+    },
+    {
+        'container': isContainer === true,
+       
+        
+    }
   );
 
   return (
@@ -86,4 +93,4 @@ const Box: React.FC<BoxProps> = ({
   );
 };
 
-export default Box;
+export default Container;

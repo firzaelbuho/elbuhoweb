@@ -2,10 +2,10 @@
 import React from 'react';
 import classNames from 'classnames';
 import Image from '@/components/atoms/Image';
-import { ImageAlignment } from '@/models/Alignment';
-import { ImageFit } from '@/models/Image';
+import { ImageAlignment } from '@/models/enum/Alignment';
+import { ImageFit } from '@/models/enum/Image';
 import Button from '@/components/atoms/Button';
-import { Color } from '@/models/Color';
+import { Color } from '@/models/enum/Color';
 
 interface ImageCharProps {
 

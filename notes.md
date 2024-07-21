@@ -9,6 +9,7 @@
 - ketika textLevel adalah heading (H1-H6) maka atribut bold dan size pada props diabaikan, pake ukuran default mereka
 
 # Layout
+- mx-auto itu mencenterkan komponen itu sendiri dari parentnya, karena seakan akan memberi margin yg seimbang di kanan kirinya sehingga ia berada di tengah
 - w-1 => 0.25 rem => 24px
 - Kelas h-screen dalam Tailwind CSS menetapkan tinggi elemen menjadi 100% dari tinggi viewport. 
 

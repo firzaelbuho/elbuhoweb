@@ -1,11 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Size } from '@/models/Size';
-import { Color } from '@/models/Color';
-import { TextAlignment } from '@/models/Alignment';
-import { Dimension } from '@/models/Layout';
+import { Size } from '@/models/enum/Size';
+import { Color } from '@/models/enum/Color';
+import { TextAlignment } from '@/models/enum/Alignment';
+import { Dimension } from '@/models/enum/Layout';
 import { Margin, Padding } from '@/models/class/Layout';
-import { TextLevel } from '@/models/Typography';
+import { TextLevel } from '@/models/enum/Typography';
 
 // Alignment hanya berfungsi jika isBlocked = true 
 
@@ -26,8 +26,8 @@ const Text: React.FC<TextProps> = ({
   color=Color.INHERIT, 
   size=Size.BASE ,
   textLevel = TextLevel.PHARAGRAPH,
-  margin = new Margin({all:0}), 
-  padding = new Margin({all:0}),
+  margin = new Margin({all:undefined}), 
+  padding = new Margin({all:undefined}),
 }) => {
   const textClass = classNames(
    

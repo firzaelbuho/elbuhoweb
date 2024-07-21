@@ -1,9 +1,9 @@
 
 import React from 'react';
 import classNames from 'classnames';
-import { Color } from '@/models/Color';
-import { Dimension, Direction } from '@/models/Layout';
-import { Basis } from '@/models/Flex';
+import { Color } from '@/models/enum/Color';
+import { Dimension, Direction } from '@/models/enum/Layout';
+import { Basis } from '@/models/enum/Flex';
 import { Margin, Padding } from '@/models/class/Layout';
 
 interface FlexProps {
@@ -19,9 +19,8 @@ interface FlexProps {
 
 const FlexChild: React.FC<FlexProps> = ({
     children,
-    margin = new Margin({all:0}), 
-    padding = new Margin({all:0}),
-   
+    margin = new Margin({all:undefined}), 
+    padding = new Margin({all:undefined}),
     background = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL,

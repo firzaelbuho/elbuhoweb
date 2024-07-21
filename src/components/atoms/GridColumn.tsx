@@ -1,9 +1,9 @@
 
 import React from 'react';
 import classNames from 'classnames';
-import { Color } from '@/models/Color';
-import {Dimension } from '@/models/Layout';
-import { ContentAlignment } from '@/models/Alignment';
+import { Color } from '@/models/enum/Color';
+import {Dimension } from '@/models/enum/Layout';
+import { ContentAlignment } from '@/models/enum/Alignment';
 import { Margin, Padding } from '@/models/class/Layout';
 
 interface GridProps {
@@ -24,8 +24,8 @@ const GridColumn: React.FC<GridProps> = ({
   horizontalAlignment = ContentAlignment.NORMAL,
   gap = 0, cols=1 , 
   background = Color.INHERIT, 
-  margin = new Margin({all:0}), 
-  padding = new Margin({all:0}),
+  margin = new Margin({all:undefined}), 
+  padding = new Margin({all:undefined}),
   height = Dimension.FULL,
   width = Dimension.FULL
 }) => {

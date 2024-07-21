@@ -1,14 +1,14 @@
 import Image from "@/components/atoms/Image";
 import Text from "../../atoms/Text";
-import { Color } from "@/models/Color";
-import { TextAlignment } from "@/models/Alignment";
+import { Color } from "@/models/enum/Color";
+import { TextAlignment } from "@/models/enum/Alignment";
 import Button from "@/components/atoms/Button";
-import { ButtonStyle } from "@/models/Button";
+import { ButtonStyle } from "@/models/enum/Button";
 import Flex from "@/components/atoms/Flex";
 import GridColumn from "@/components/atoms/GridColumn";
 import GridCell from "@/components/atoms/GridCell";
-import { Size } from "@/models/Size";
-import { TextLevel } from "@/models/Typography";
+import { Size } from "@/models/enum/Size";
+import { TextLevel } from "@/models/enum/Typography";
 
 
 const Welcome:React.FC = ()=>{

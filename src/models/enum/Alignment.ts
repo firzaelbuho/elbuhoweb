@@ -34,4 +34,10 @@ export enum ImageAlignment {
     BASELINE = 'baseline',
     STRETCH = 'stretch'
   }
+
+  export enum SelfAlignment{
+    LEFT = 1,
+    RIGHT = 2,
+    CENTER = 3,
+  }
   

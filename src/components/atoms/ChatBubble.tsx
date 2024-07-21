@@ -1,8 +1,8 @@
 
 import React from 'react';
 import classNames from 'classnames';
-import { ChatPosition } from '@/models/ChatPosition';
-import { Color } from '@/models/Color';
+import { ChatPosition } from '@/models/enum/ChatPosition';
+import { Color } from '@/models/enum/Color';
 
 interface ChatBubbleProps {
   text? : string;

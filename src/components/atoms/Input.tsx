@@ -1,6 +1,6 @@
-import { Color } from "@/models/Color";
-import { InputStyle, InputType } from "@/models/Input";
-import { Size } from "@/models/Size";
+import { Color } from "@/models/enum/Color";
+import { InputStyle, InputType } from "@/models/enum/Input";
+import { Size } from "@/models/enum/Size";
 import classNames from "classnames";
 
 import React, { useState } from 'react';

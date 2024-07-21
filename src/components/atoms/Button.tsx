@@ -2,9 +2,9 @@
 
 
 
-import { ButtonShape, ButtonStyle, ButtonType } from "@/models/Button";
-import { Color } from "@/models/Color";
-import { Size } from "@/models/Size";
+import { ButtonShape, ButtonStyle, ButtonType } from "@/models/enum/Button";
+import { Color } from "@/models/enum/Color";
+import { Size } from "@/models/enum/Size";
 import classNames from "classnames";
 
 interface ButtonProps {

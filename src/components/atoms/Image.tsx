@@ -1,11 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
-import { BorderRadius, BorderStyle } from '@/models/Border';
-import { ImageAlignment } from '@/models/Alignment';
-import { ImageFit } from '@/models/Image';
-import { Color } from '@/models/Color';
-import { Shadow } from '@/models/Shadow';
-import { Dimension } from '@/models/Layout';
+import { BorderRadius, BorderStyle } from '@/models/enum/Border';
+import { ImageAlignment } from '@/models/enum/Alignment';
+import { ImageFit } from '@/models/enum/Image';
+import { Color } from '@/models/enum/Color';
+import { Shadow } from '@/models/enum/Shadow';
+import { Dimension } from '@/models/enum/Layout';
 
 
 

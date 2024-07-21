@@ -2,11 +2,12 @@
 import React from 'react';
 import classNames from 'classnames';
 import Image from '@/components/atoms/Image';
-import { ImageAlignment, TextAlignment } from '@/models/Alignment';
-import { ImageFit } from '@/models/Image';
+import { ImageAlignment, TextAlignment } from '@/models/enum/Alignment';
+import { ImageFit } from '@/models/enum/Image';
 import Button from '@/components/atoms/Button';
-import { Color } from '@/models/Color';
+import { Color } from '@/models/enum/Color';
 import Text from '@/components/atoms/Text';
+import { TextLevel } from '@/models/enum/Typography';
 
 interface ImageCharProps {
 
@@ -40,10 +41,14 @@ const ImageChar: React.FC<ImageCharProps> = ({
         </figure>
         <div className="card-body">
 
-            <h2 className="card-title text-center text-base-content">
-                {title}
+            <Text textLevel={TextLevel.H6} color={Color.BASE_CONTENT} textAlignment={TextAlignment.CENTER}>
+            {title}
+            </Text>
+
+            {/* <h2 className="card-title text-center text-base-content">
+              
                
-            </h2>
+            </h2> */}
             {/* <Text isBlock={true} textAlignment={TextAlignment.CENTER}>Hi !</Text> */}
             {/* <p>{subTitle}</p> */}
           
