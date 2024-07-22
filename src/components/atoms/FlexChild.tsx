@@ -8,7 +8,7 @@ import { Margin, Padding } from '@/models/class/Layout';
 
 interface FlexProps {
     children?: React.ReactNode;
-    background?:Color;
+    backgroundColor?:Color;
     padding?:Padding;
     margin?:Margin;
     // alignment? : ;
@@ -21,7 +21,7 @@ const FlexChild: React.FC<FlexProps> = ({
     children,
     margin = new Margin({all:undefined}), 
     padding = new Padding({all:undefined}),
-    background = Color.INHERIT,
+    backgroundColor = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL,
     basis
@@ -29,7 +29,7 @@ const FlexChild: React.FC<FlexProps> = ({
   const flexrowClass = classNames(
     "flex", 
     `basis-${basis}`,
-    `bg-${background}`,
+    `bg-${backgroundColor}`,
     
     // Margin
     `mt-${margin.top}`,

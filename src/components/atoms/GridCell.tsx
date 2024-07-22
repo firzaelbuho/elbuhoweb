@@ -11,9 +11,11 @@ interface GridProps {
     rowSpan?:number;
     padding?:Padding;
     margin?:Margin;
-    background?:Color;
+    backgroundColor?:Color;
     width? : Dimension;
     height?: Dimension;
+
+  
 }
 
 const GridCell: React.FC<GridProps> = ({ 
@@ -22,13 +24,13 @@ const GridCell: React.FC<GridProps> = ({
     padding = new Padding({all:undefined}),
     colSpan = 1,
     rowSpan = 1,
-    background = Color.INHERIT,
+    backgroundColor = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL
 }) => {
   const gridClass = classNames(
     "grid", 
-    `bg-${background}`,
+    `bg-${backgroundColor}`,
     `col-span-${colSpan}`,
     `row-span-${rowSpan}`,
   

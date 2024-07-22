@@ -12,7 +12,8 @@ import { TextLevel } from '@/models/enum/Typography';
 interface TextProps {
   children?: React.ReactNode;
   textAlignment?: TextAlignment;
-  color?: Color;
+  textColor?: Color;
+  backgroundColor?:Color;
   size?: Size;
   // isBlock?:boolean;
   margin?:Margin;
@@ -23,14 +24,14 @@ const Text: React.FC<TextProps> = ({
  
   children, 
   textAlignment = TextAlignment.LEFT, 
-  color, 
+  textColor, backgroundColor,
   size=Size.BASE ,
   textLevel = TextLevel.PHARAGRAPH,
   margin = new Margin({all:undefined}), 
   padding = new Margin({all:undefined}),
 }) => {
   const textClass = classNames(
-   
+    // "align-center",
     `text-${textAlignment}`, 
     
     // Padding
@@ -40,12 +41,15 @@ const Text: React.FC<TextProps> = ({
     `mr-${margin.right}`,
 
     // Margin
+
     `pt-${padding.top}`,
     `pb-${padding.bottom}`,
     `pl-${padding.left}`,
     `pr-${padding.right}`,
     // "text-center",
-    `text-${color}`,
+    `text-${textColor}`,
+    `bg-${backgroundColor}`,
+
     {[`text-${size}`]: textLevel === TextLevel.PHARAGRAPH},
     {[`text-${size}`]: textLevel === TextLevel.INLINE},
 

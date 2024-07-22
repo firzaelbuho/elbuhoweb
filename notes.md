@@ -3,6 +3,10 @@
 - tailwind classname tidak bisa dimodif secara dinamis (contoh : btn-${color}). harus masukan ke safelist dulu pada tailwind.config.json
 
 - kelas "grid-flow-col" khusus diperlukan kalau pakai grid-rows
+-  z-[9999], kelas agar component di paling atas, gunakan pada navbar yang fixed agar tidak tertimpa ketika scroll
+
+# Logo
+- font : francklin-gothic-heavy
 
 # Table
 ## Table -> TRow -> TCell

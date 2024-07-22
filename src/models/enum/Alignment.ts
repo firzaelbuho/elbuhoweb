@@ -66,6 +66,7 @@ export enum VerticalAlignment {
    * Align text to the baseline of the cell.
    */
   BASELINE = "baseline",
+  STRETCH = "stretch"
 }
 
   

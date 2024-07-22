@@ -12,7 +12,7 @@ import { Padding, Margin } from '@/models/class/Layout';
 interface BoxProps {
     textColor?: Color;
     children?: React.ReactNode;
-    background?:Color;
+    backgroundColor?:Color;
     padding?:Padding;
     margin?:Margin;
     selfAlignment? : SelfAlignment;
@@ -30,7 +30,7 @@ const Box: React.FC<BoxProps> = ({
     textColor,
     margin = new Margin({all:undefined}), 
     padding = new Margin({all:undefined}),
-    background = Color.INHERIT,
+    backgroundColor = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL,
     shadow = Shadow.NONE,
@@ -42,7 +42,7 @@ const Box: React.FC<BoxProps> = ({
   
  }) => {
   const boxClass = classNames(
-    `bg-${background}`,
+    `bg-${backgroundColor}`,
     `text-${textColor}`,
     // Padding
     `mt-${margin.top}`,

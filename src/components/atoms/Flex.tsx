@@ -4,15 +4,16 @@ import classNames from 'classnames';
 import { Color } from '@/models/enum/Color';
 import { Dimension, Direction, Overflow } from '@/models/enum/Layout';
 import { FlexWrap } from '@/models/enum/Flex';
-import { ContentAlignment } from '@/models/enum/Alignment';
+import { ContentAlignment, VerticalAlignment } from '@/models/enum/Alignment';
 import { Margin, Padding } from '@/models/class/Layout';
 
 interface FlexProps {
     children?: React.ReactNode;
-    background?:Color;
+    backgroundColor?:Color;
     padding?:Padding;
     margin?:Margin;
-    alignment? : ContentAlignment;
+    horizontalAlignment? : ContentAlignment;
+    verticalAlignment? : VerticalAlignment;
     width? : Dimension;
     height?: Dimension;
     direction:Direction;
@@ -25,18 +26,19 @@ const Flex: React.FC<FlexProps> = ({
     children,
     margin = new Margin({all:undefined}), 
     padding = new Padding({all:undefined}),
-    background = Color.INHERIT,
+    backgroundColor = Color.INHERIT,
     height = Dimension.FULL,
     width = Dimension.FULL,
     wrap = FlexWrap.WRAP,
     overflow = Overflow.AUTO,
     gap = 0,
     direction,
-    alignment = ContentAlignment.START
+    horizontalAlignment = ContentAlignment.START,
+    verticalAlignment = VerticalAlignment.MIDDLE
   }) => {
   
   if(wrap != FlexWrap.NO_WRAP){
-    overflow = Overflow.HIDDEN;
+    overflow = Overflow.VISIBLE;
   }
     
   const flexrowClass = classNames(
@@ -44,9 +46,12 @@ const Flex: React.FC<FlexProps> = ({
     "flex", 
     // "items-center",
     // "justify-center",
-    `justify-${alignment}`,
+
+    `justify-${horizontalAlignment}`,
+    {"items-center" : verticalAlignment===VerticalAlignment.MIDDLE},
+
     `flex-${direction}`,
-    `bg-${background}`,
+    `bg-${backgroundColor}`,
 
      // Margin
      `mt-${margin.top}`,

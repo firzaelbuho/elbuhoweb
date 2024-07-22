@@ -24,12 +24,14 @@ import { Padding, Margin } from "@/models/class/Layout"
 import Flex from "@/components/atoms/Flex"
 import GridColumn from "@/components/atoms/GridColumn"
 import GridCell from "@/components/atoms/GridCell"
-import { BorderRadius } from "@/models/enum/Border"
+import { BorderRadius, BorderStyle } from "@/models/enum/Border"
 import Text from "@/components/atoms/Text"
 import { TextLevel } from "@/models/enum/Typography"
 import Table from "@/components/atoms/Table"
 import TRow from "@/components/atoms/TRow"
 import TCell from "@/components/atoms/TCell"
+import TBody from "@/components/atoms/TBody"
+import BoxExample from "@/components/atoms/BoxExample"
 
 
 
@@ -46,34 +48,47 @@ export default function RtiCharacterPage() {
         
 
         {/* navbar */}
-        <Container width={Dimension["2/3"]}>
+        <Container >
           <RtiNavbar />
-          <ThemeChanger />
+          {/* <ThemeChanger /> */}
         </Container>
         
         
 
         {/* introduction */}
-        <Container width={Dimension["2/3"]} padding={padding}>
+        <Container width={Dimension["2/3"]} padding={new Padding({top:32})}>
 
           <GridColumn cols={3} gap={2}>
 
             <GridCell  >
               
-              <Box padding={padding} background={Color.ACCENT} borderRadius={BorderRadius.LG}>
-              <Image borderRadius={BorderRadius.XL} />
+              <Box padding={padding} backgroundColor={Color.ACCENT} borderRadius={BorderRadius.LG}>
+                <Image 
+                  borderStyle={BorderStyle.SOLID}
+                  borderColor={Color.BASE_100}
+                  borderRadius={BorderRadius.XL} />
+                <Text 
+                  textAlignment={TextAlignment.CENTER}
+                  textColor={Color.ACCENT_CONTENT}
+                  padding={new Padding({y:5})}
+                  textLevel={TextLevel.H6}>
+                  John Doe
+                </Text> 
+                
+                
               </Box>
             </GridCell>
 
             {/* Tabel biodata  */}
            
             <GridCell colSpan={2} >
-              <Box padding={padding} background={Color.ACCENT} borderRadius={BorderRadius.LG}>
-                <Text textLevel={TextLevel.H6} color={Color.ACCENT_CONTENT}>Profile :</Text>
+              <Box padding={padding} backgroundColor={Color.ACCENT} borderRadius={BorderRadius.LG}>
+                <Text textLevel={TextLevel.H6} textColor={Color.ACCENT_CONTENT}>Profile :</Text>
 
                 <Table textColor={Color.ACCENT_CONTENT}>
-                  <TRow backGroundColor={Color.PRIMARY}>
-                    <TCell width={Dimension["2/12"]} >Nama Saya</TCell>
+                  <TBody>
+                  <TRow>
+                    <TCell width={Dimension["2/12"]} rowSpan={1} >Nama Saya</TCell>
                     <TCell width={Dimension["1/12"]} >:</TCell>
                     <TCell width={Dimension["9/12"]} >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium iure deserunt sunt in ipsum, minus hic error. Consectetur deserunt reiciendis dolorem nam blanditiis veritatis quod consequuntur magnam tempore doloremque!
@@ -94,6 +109,8 @@ export default function RtiCharacterPage() {
                     <TCell>:</TCell>
                     <TCell>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium iure deserunt sunt in ipsum, minus hic error. Consectetur deserunt reiciendis dolorem nam blanditiis veritatis quod consequuntur magnam tempore doloremque!</TCell>                  
                   </TRow>
+                  </TBody>
+                  
                 </Table>
               </Box>
             </GridCell>
@@ -101,7 +118,7 @@ export default function RtiCharacterPage() {
             <GridCell colSpan={3} >
               <Box 
                 padding={padding} 
-                background={Color.ACCENT} 
+                backgroundColor={Color.ACCENT} 
                 borderRadius={BorderRadius.LG} 
                 textColor={Color.ACCENT_CONTENT} >
 
@@ -116,7 +133,7 @@ export default function RtiCharacterPage() {
             <GridCell colSpan={3} >
               <Box 
                 padding={padding} 
-                background={Color.ACCENT} 
+                backgroundColor={Color.ACCENT} 
                 borderRadius={BorderRadius.LG} 
                 textColor={Color.ACCENT_CONTENT} >
 
@@ -134,7 +151,7 @@ export default function RtiCharacterPage() {
 
         {/* Content */}
 
-        <Container background={Color.ACCENT}  padding={padding}>
+        <Container backgroundColor={Color.ACCENT}  padding={padding}>
           <Container  width={Dimension["2/3"]}>
             {/* <Motion anim={AnimationStyle.SWIPE_UP_IN}><Characters/></Motion> */}
           </Container>
@@ -143,9 +160,14 @@ export default function RtiCharacterPage() {
        
 
         {/* Footer */}
-        <Container background={Color.NEUTRAL}>
+        <Container backgroundColor={Color.NEUTRAL}>
           <Container width={Dimension["2/3"]}>    
             <Footer />
+            <Flex backgroundColor={Color.ACCENT} width={Dimension["96D"]} height={Dimension["96D"]} direction={Direction.COL} gap={4}>
+              <BoxExample/>
+              <BoxExample/>
+              <BoxExample/>
+            </Flex>
           </Container> 
         </Container>
         

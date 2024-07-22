@@ -37,13 +37,13 @@ export default function RtiHomePage() {
         
 
         {/* navbar */}
-        <Container width={Dimension["2/3"]}>
+        <Container>
           <RtiNavbar />
-          <ThemeChanger />
+         
         </Container>
         
         {/* jumbotron */}
-        <Container width={Dimension["2/3"]}>
+        <Container padding={new Padding( {top:24})} width={Dimension["2/3"]}>
           <Jumbotron />
         </Container>   
 
@@ -54,7 +54,7 @@ export default function RtiHomePage() {
 
         {/* Content */}
 
-        <Container background={Color.ACCENT}  padding={padding}>
+        <Container backgroundColor={Color.ACCENT}  padding={padding}>
           <Container  width={Dimension["2/3"]}>
             <Motion anim={AnimationStyle.SWIPE_UP_IN}><Characters/></Motion>
           </Container>
@@ -63,7 +63,7 @@ export default function RtiHomePage() {
        
 
         {/* Footer */}
-        <Container background={Color.NEUTRAL}>
+        <Container backgroundColor={Color.NEUTRAL}>
           <Container width={Dimension["2/3"]}>    
             <Footer />
           </Container> 

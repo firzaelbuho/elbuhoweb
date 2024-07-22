@@ -47,14 +47,14 @@ const Characters: React.FC<RtiCharactersProps> = ({  }) => {
 
     
     <div>
-    <Text padding={new Padding({all:5})} textLevel={TextLevel.H3}>Characters :</Text>
+    <Text textColor={Color.ACCENT_CONTENT} padding={new Padding({all:5})} textLevel={TextLevel.H3}>Characters :</Text>
 
-    <Flex direction={Direction.ROW}  alignment={ContentAlignment.START} gap={0} wrap={FlexWrap.WRAP}>
+    <Flex direction={Direction.ROW}   gap={0} wrap={FlexWrap.WRAP}>
       {items.map((_,x)=>(
         
       <FlexChild basis={Basis['1/5']}  padding={new Padding({all:5})} >
         <a href="google.com">
-        <Motion triger={AnimationTrigger.HOVER} scaled={1.4} anim={AnimationStyle.SCALED}>
+        <Motion triger={AnimationTrigger.HOVER} scaled={1.2} anim={AnimationStyle.SCALED}>
           <ImageChar title={"John Doe #"+x} />
         </Motion>
        

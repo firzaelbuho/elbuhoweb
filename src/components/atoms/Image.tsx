@@ -10,7 +10,7 @@ import { Dimension } from '@/models/enum/Layout';
 
 
 interface ImageProps {
-  url?: string;
+  src?: string;
   alt?:string
   width?: Dimension;
   height?: Dimension;
@@ -24,7 +24,7 @@ interface ImageProps {
 }
 
 const Image: React.FC<ImageProps> = ({
-  url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPKSe_z6cgW-yTyEBOILtedGE1hyCFBHSKg&s",
+  src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPKSe_z6cgW-yTyEBOILtedGE1hyCFBHSKg&s",
   alt ="",
   width = Dimension.FULL,
   height = Dimension.AUTO,
@@ -73,7 +73,7 @@ const Image: React.FC<ImageProps> = ({
 
   return (
     <img
-      src={url}
+      src={src}
       alt={alt}
       width={width}
       height={height}

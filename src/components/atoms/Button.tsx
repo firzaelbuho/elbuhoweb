@@ -11,7 +11,7 @@ interface ButtonProps {
   label?: string;
   onClick?: () => void;
   type?: ButtonType;
-  color?: Color  ;
+  btnColor?: Color  ;
   style?: ButtonStyle
   isDisabled?:boolean;
   isActive?:boolean;
@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
   label = "Button", 
   onClick, 
   type = ButtonType.BUTTON, 
-  color= Color.INHERIT , 
+  btnColor= Color.INHERIT , 
   size= Size.MD, 
   shape=ButtonShape.NONE, 
   style=ButtonStyle.NONE,
@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
 
 
   const buttonClass = classNames(
-    "btn", `btn-${color}`,
+    "btn", `btn-${btnColor}`,
     { 'btn-disabled': isDisabled },
     { 'btn-active': isActive },
     { [`btn-${shape}`]: shape !== 'none' },

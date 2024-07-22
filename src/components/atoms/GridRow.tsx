@@ -10,7 +10,7 @@ interface GridProps {
     children?: React.ReactNode;
     gap?:number;
     rows:1|2|3|4|5|6|7|8|9|10|11|12;
-    background?:Color;
+    backgroundColor?:Color;
     padding?:Padding;
     margin?:Margin;
     // direction: Direction;
@@ -23,7 +23,7 @@ const GridRow: React.FC<GridProps> = ({
   children, 
 //   verticalAlignment = ContentAlignment.NORMAL,
   gap = 0, rows = 1 , 
-  background = Color.INHERIT, 
+  backgroundColor = Color.INHERIT, 
   margin = new Margin({all:undefined}), 
   padding = new Padding({all:undefined}),
 
@@ -34,7 +34,7 @@ const GridRow: React.FC<GridProps> = ({
  
   const gridClass = classNames(
     "grid", 
-    `bg-${background}`,
+    `bg-${backgroundColor}`,
    
     `gap-${gap}`,
     // `content-${verticalAlignment}`,

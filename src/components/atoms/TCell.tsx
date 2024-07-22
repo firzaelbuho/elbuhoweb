@@ -12,11 +12,15 @@ interface TCellProps {
   width?: Dimension;
   cellType?:CellType;
   padding?: Padding;
+  colSpan?:number;
+  rowSpan?:number;
 
 }
 
 const TCell: React.FC<TCellProps> = ({
   children,
+  colSpan = 1, 
+  rowSpan = 1,
   padding = new Padding({all:undefined}),
   alignment = VerticalAlignment.TOP,
   cellType = CellType.NORMAL,
@@ -35,9 +39,9 @@ const TCell: React.FC<TCellProps> = ({
   );
 
   if(cellType === CellType.NORMAL){
-    return <td className={tcellClass}>{children}</td>
+    return <td colSpan={colSpan} rowSpan={rowSpan} className={tcellClass}>{children}</td>
   } else {
-    return <th className={tcellClass}>{children}</th>
+    return <th colSpan={colSpan} rowSpan={rowSpan} className={tcellClass}>{children}</th>
   }
 
 
