@@ -3,7 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { Color } from '@/models/enum/Color';
 import { ContentAlignment, SelfAlignment } from '@/models/enum/Alignment';
-import { Dimension, Overflow } from '@/models/enum/Layout';
+import { Dimension, Overflow, Position } from '@/models/enum/Layout';
 import { BorderRadius, BorderStyle } from '@/models/enum/Border';
 import { Shadow } from '@/models/enum/Shadow';
 import { Padding, Margin } from '@/models/class/Layout';
@@ -24,10 +24,13 @@ interface BoxProps {
     borderColor?: Color;
     borderStyle?: BorderStyle;
     overflow?: Overflow;
+    verticalAlignment? : ContentAlignment;
+    position? : Position;
 
 }
 
 const Box: React.FC<BoxProps> = ({ 
+    position = Position.STATIC,
     children,
     textColor,
     overflow = Overflow.AUTO,
@@ -41,7 +44,8 @@ const Box: React.FC<BoxProps> = ({
     borderRadius = BorderRadius.NONE,
     borderStyle = BorderStyle.NONE,
     borderColor = Color.INHERIT,
-    borderSize = 4
+    borderSize = 4,
+    verticalAlignment = ContentAlignment.START
   
  }) => {
   const boxClass = classNames(
@@ -82,7 +86,18 @@ const Box: React.FC<BoxProps> = ({
       "ml-auto": selfAlignment === SelfAlignment.RIGHT,
       "mr-auto": selfAlignment === SelfAlignment.LEFT,
       
-  }
+    },
+
+    {
+      'absolute inset-0': position === Position.ABSOLUTE,
+      "static": position === Position.STATIC,
+      'sticky': position === Position.STICKY,
+      "relative": position === Position.RELATIVE,
+      'fixed': position === Position.FIXED
+      
+      
+    },
+    `content-${verticalAlignment}`
   );
 
   return (

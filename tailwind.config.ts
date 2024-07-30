@@ -17,9 +17,9 @@ const config: Config = {
   },
  
   safelist: [
-    { pattern: /(bg|text|btn|input|border)-(red|green|blue|yellow|teal|stone|lime)-(100|200|300|400|500)/ },
+    { pattern: /(bg|text|btn|input|border)-(black|white|red|green|blue|yellow|teal|stone|lime)-(100|200|300|400|500)/ },
     { pattern: /(bg|text|btn|input|border)-(sm|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl|9xl)/ },
-    { pattern: /(text|bg|btn|input|border|chat-bubble)-(inherit|base-100|base-200|base-300|base-content|primary|primary-content|secondary|secondary-content|accent|accent-content|neutral|neutral-content|success|success-content|info|info-content|warning|warning-content|error|error-content|dark|dark-content|light|light-content)/ },
+    { pattern: /(text|bg|btn|input|border|chat-bubble)-(black|white|inherit|base-100|base-200|base-300|base-content|primary|primary-content|secondary|secondary-content|accent|accent-content|neutral|neutral-content|success|success-content|info|info-content|warning|warning-content|error|error-content|dark|dark-content|light|light-content)/ },
 
     // Layout
 

@@ -3,7 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { Color } from '@/models/enum/Color';
 import { ContentAlignment, SelfAlignment } from '@/models/enum/Alignment';
-import { Dimension, Overflow } from '@/models/enum/Layout';
+import { Dimension, Overflow, Position } from '@/models/enum/Layout';
 import { BorderRadius, BorderStyle } from '@/models/enum/Border';
 import { Shadow } from '@/models/enum/Shadow';
 import { Padding, Margin } from '@/models/class/Layout';
@@ -25,9 +25,12 @@ interface BoxProps {
     isContainer?: boolean;
     textColor?: Color;
     overflow?: Overflow;
+    verticalAlignment? : ContentAlignment;
+    position? : Position
 }
 
 const Container: React.FC<BoxProps> = ({ 
+  position = Position.STATIC,
     children,
     textColor,
     overflow = Overflow.AUTO,
@@ -42,7 +45,8 @@ const Container: React.FC<BoxProps> = ({
     borderStyle = BorderStyle.NONE,
     borderColor = Color.INHERIT,
     borderSize = 4,
-    isContainer = false
+    isContainer = false,
+    verticalAlignment = ContentAlignment.START
   
  }) => {
   const boxClass = classNames(
@@ -85,10 +89,20 @@ const Container: React.FC<BoxProps> = ({
       
     },
     {
+      'absolute': position === Position.ABSOLUTE,
+      "static": position === Position.STATIC,
+      'sticky': position === Position.STICKY,
+      "relative": position === Position.RELATIVE,
+      'fixed': position === Position.FIXED
+      
+      
+    },
+    {
         'container': isContainer === true,
        
         
-    }
+    },
+    `content-${verticalAlignment}`
   );
 
   return (

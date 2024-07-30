@@ -40,11 +40,11 @@ import { fetchAllCharacters } from '@/services/characterServices';
 import { useState } from 'react';
 
 interface RtiCharactersProps {
-  character : Character
+ 
 }
 
 const Characters: React.FC<RtiCharactersProps> = ({  
-  character
+  
 }) => {
   const rticharactersClass = classNames({
 

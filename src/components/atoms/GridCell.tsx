@@ -1,9 +1,10 @@
 
 import React from 'react';
 import classNames from 'classnames';
-import { Dimension } from '@/models/enum/Layout';
+import { Dimension, Position } from '@/models/enum/Layout';
 import { Color } from '@/models/enum/Color';
 import { Margin, Padding } from '@/models/class/Layout';
+import { ContentAlignment } from '@/models/enum/Alignment';
 
 interface GridProps {
     children?: React.ReactNode;
@@ -14,11 +15,14 @@ interface GridProps {
     backgroundColor?:Color;
     width? : Dimension;
     height?: Dimension;
+    position? : Position;
+    verticalAlignment? : ContentAlignment;
 
   
 }
 
 const GridCell: React.FC<GridProps> = ({ 
+    position = Position.STATIC,
     children, 
     margin = new Margin({all:undefined}), 
     padding = new Padding({all:undefined}),
@@ -26,7 +30,8 @@ const GridCell: React.FC<GridProps> = ({
     rowSpan = 1,
     backgroundColor = Color.INHERIT,
     height,
-    width = Dimension.FULL
+    width = Dimension.FULL,
+    verticalAlignment = ContentAlignment.START
 }) => {
   const gridClass = classNames(
     "grid", 
@@ -48,6 +53,18 @@ const GridCell: React.FC<GridProps> = ({
    `pb-${padding.bottom}`,
    `pl-${padding.left}`,
    `pr-${padding.right}`,
+
+   `content-${verticalAlignment}`,
+   {
+    'absolute': position === Position.ABSOLUTE,
+    "static": position === Position.STATIC,
+    'sticky': position === Position.STICKY,
+    "relative": position === Position.RELATIVE,
+    'fixed': position === Position.FIXED
+    
+    
+  }
+  
 
 
   );

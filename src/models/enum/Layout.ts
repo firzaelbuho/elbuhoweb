@@ -6,6 +6,17 @@ export enum Direction {
   }
   
 
+export enum Position {
+    STATIC = "static",
+    RELATIVE = "relative",
+    ABSOLUTE = "absolute",
+    FIXED = "fixed",
+    STICKY = "sticky",
+  }
+  
+
+  
+
 export enum Dimension {
     // Numeric values
      // Numeric values

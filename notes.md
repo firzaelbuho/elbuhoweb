@@ -22,6 +22,8 @@ Biaskaan cek inspect element -> console di browser kalo gagal fetch dll
 - ketika textLevel adalah heading (H1-H6) maka atribut bold dan size pada props diabaikan, pake ukuran default mereka
 
 # Layout
+- Kalau mau saling menimpa / doubled layer. pastikan parent = Relative, child ke 2 inset-0 dan absolute
+- Kalau mau border harus diisi borderSize dan borderStyle
 - gap pada grid tidak mempengaruhi width/height. jadi aman. kalau flex gap tetap dihitung
 - Biasakan overflow ditaruh di parent/container/box yg mengandung grid/flex. karena itu lah yg memberi nilai mutlak tinggi/lebar
 - mx-auto itu mencenterkan komponen itu sendiri dari parentnya, karena seakan akan memberi margin yg seimbang di kanan kirinya sehingga ia berada di tengah
