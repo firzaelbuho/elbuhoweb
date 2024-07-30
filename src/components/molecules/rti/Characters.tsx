@@ -22,7 +22,7 @@ import Text from '@/components/atoms/Text';
 import { ContentAlignment, TextAlignment } from '@/models/enum/Alignment';
 import { Dimension, Direction, Overflow } from '@/models/enum/Layout';
 
-import Flex from '@/components/atoms/Flex';
+import Flex from '@/components/atoms/FlexRow';
 import FlexChild from '@/components/atoms/FlexChild';
 import { Basis, FlexWrap } from '@/models/enum/Flex';
 import Box from '@/components/atoms/Box';
@@ -32,16 +32,39 @@ import { Padding, Margin } from '@/models/class/Layout';
 import { TextLevel } from '@/models/enum/Typography';
 import Motion from '@/components/anims/Motion';
 import { AnimationStyle, AnimationTrigger } from '@/models/enum/Animation';
+import FlexRow from '@/components/atoms/FlexRow';
+import { Character, Job } from '@/models/class/Characters';
+import { getAllCharacters, loadCharacters } from '@/models/dummy/dummy';
+import { fetchAllCharacters } from '@/services/characterServices';
+
+import { useState } from 'react';
 
 interface RtiCharactersProps {
-  
+  character : Character
 }
 
-const Characters: React.FC<RtiCharactersProps> = ({  }) => {
+const Characters: React.FC<RtiCharactersProps> = ({  
+  character
+}) => {
   const rticharactersClass = classNames({
+
+    
     
   });
   const items = Array.from({ length: 20 })
+
+  // const characterData: Character[] = 
+  const [characters, setCharacters] = useState<Character[]>([]);
+
+  useEffect(() => {
+    async function fetchCharacters() {
+      const loadedCharacters = await fetchAllCharacters();
+      setCharacters(loadedCharacters);
+      console.log(loadedCharacters)
+    }
+
+    fetchCharacters();
+  }, []);
 
   return (
 
@@ -49,20 +72,21 @@ const Characters: React.FC<RtiCharactersProps> = ({  }) => {
     <div>
     <Text textColor={Color.ACCENT_CONTENT} padding={new Padding({all:5})} textLevel={TextLevel.H3}>Characters :</Text>
 
-    <Flex direction={Direction.ROW}   gap={0} wrap={FlexWrap.WRAP}>
-      {items.map((_,x)=>(
+    <FlexRow   gap={0} wrap={FlexWrap.WRAP}>
+      {characters.map((char)=>(
         
       <FlexChild basis={Basis['1/5']}  padding={new Padding({all:5})} >
-        <a href="google.com">
-        <Motion triger={AnimationTrigger.HOVER} scaled={1.2} anim={AnimationStyle.SCALED}>
-          <ImageChar title={"John Doe #"+x} />
-        </Motion>
        
-        </a>
+        <Motion triger={AnimationTrigger.HOVER} scaled={1.2} anim={AnimationStyle.SCALED}>
+          <a href={"/relife-the-island/character/"+char.charId}>
+            <ImageChar title={char.fullName} url={`/assets/characters/${char.fullName}.jpeg`} />
+          </a>
+        </Motion>
+        
        
       </FlexChild>
       ))}
-    </Flex> 
+    </FlexRow> 
       
      
 

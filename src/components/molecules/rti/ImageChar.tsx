@@ -35,13 +35,13 @@ const ImageChar: React.FC<ImageCharProps> = ({
             <Image 
                 imageAlignment={ImageAlignment.CENTER}
                 fit={ImageFit.COVER}
-                url={url}
+                src={url}
                 
             />
         </figure>
         <div className="card-body">
 
-            <Text textLevel={TextLevel.H6} color={Color.BASE_CONTENT} textAlignment={TextAlignment.CENTER}>
+            <Text textLevel={TextLevel.H6} textColor={Color.BASE_CONTENT} textAlignment={TextAlignment.CENTER}>
             {title}
             </Text>
 

@@ -26,13 +26,13 @@ const GridColumn: React.FC<GridProps> = ({
   backgroundColor = Color.INHERIT, 
   margin = new Margin({all:undefined}), 
   padding = new Padding({all:undefined}),
-  height = Dimension.FULL,
+  height ,
   width = Dimension.FULL
 }) => {
   
  
   const gridClass = classNames(
-    "grid", 
+    "grid",
     `bg-${backgroundColor}`,
    
     `gap-${gap}`,

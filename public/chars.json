@@ -1,0 +1,747 @@
+[
+    {
+      "charId": 1,
+      "fullName": "MC",
+      "nickname": "",
+      "birthday": "",
+      "age": 22,
+      "gender": "Male",
+      "origin": "Pendatang",
+      "jobs": [
+        {
+          "jobId": 1,
+          "jobName": "Pengurus Pertanian",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": true,
+      "description": "Pendatang baru yang mengurus pertanian di Desa Samudra.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 2,
+      "fullName": "Adi",
+      "nickname": "",
+      "birthday": "",
+      "age": "",
+      "gender": "Male",
+      "origin": "Pendatang",
+      "jobs": [
+        {
+          "jobId": 2,
+          "jobName": "Supervisor",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Supervisor program Relife the Island yang mengajak MC.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 3,
+      "fullName": "Linda",
+      "nickname": "",
+      "birthday": "",
+      "age": 30,
+      "gender": "Female",
+      "origin": "Pendatang",
+      "jobs": [
+        {
+          "jobId": 3,
+          "jobName": "Kepala Biro Relife the Island",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Kepala biro Relife the Island untuk Desa Samudra.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 4,
+      "fullName": "Siska",
+      "nickname": "",
+      "birthday": "",
+      "age": 20,
+      "gender": "Female",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 4,
+          "jobName": "Asisten Linda",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": true,
+      "description": "Asisten Linda dan anak kepala desa.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 5,
+      "fullName": "Toha",
+      "nickname": "",
+      "birthday": "",
+      "age": 45,
+      "gender": "Male",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 5,
+          "jobName": "Kepala Desa",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Kepala desa Desa Samudra.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 6,
+      "fullName": "Toni",
+      "nickname": "",
+      "birthday": "",
+      "age": 24,
+      "gender": "Male",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 6,
+          "jobName": "Sekretaris Desa",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Sekretaris desa yang membantu Toha.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 7,
+      "fullName": "Sabda",
+      "nickname": "Kakek Sabda",
+      "birthday": "",
+      "age": 63,
+      "gender": "Male",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 7,
+          "jobName": "Petani",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Warga desa yang harmonis.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 3,
+          "fullName": "Linda",
+          "relative": {
+            "relativeStatus": "child"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 8,
+      "fullName": "Nini",
+      "nickname": "Nenek Nini",
+      "birthday": "",
+      "age": 59,
+      "gender": "Female",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 8,
+          "jobName": "Ibu Rumah Tangga",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Pasangan Kakek Sabda.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 7,
+          "fullName": "Sabda",
+          "relative": {
+            "relativeStatus": "spouse"
+          }
+        },
+        {
+          "charId": 3,
+          "fullName": "Linda",
+          "relative": {
+            "relativeStatus": "child"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 9,
+      "fullName": "Joni",
+      "nickname": "",
+      "birthday": "",
+      "age": 20,
+      "gender": "Male",
+      "origin": "Pendatang",
+      "jobs": [
+        {
+          "jobId": 9,
+          "jobName": "Petugas Keamanan",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": true,
+      "description": "Petugas keamanan yang mengagumi Jeki.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 10,
+      "fullName": "Jeki",
+      "nickname": "",
+      "birthday": "",
+      "age": 34,
+      "gender": "Male",
+      "origin": "Pendatang",
+      "jobs": [
+        {
+          "jobId": 10,
+          "jobName": "Petugas Keamanan Senior",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Petugas keamanan senior.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 11,
+      "fullName": "Lino",
+      "nickname": "",
+      "birthday": "",
+      "age": 25,
+      "gender": "Male",
+      "origin": "Pendatang",
+      "jobs": [
+        {
+          "jobId": 11,
+          "jobName": "Teknisi",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Teknisi yang mengelola sumber daya listrik pulau.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": []
+    },
+    {
+      "charId": 12,
+      "fullName": "Riani",
+      "nickname": "",
+      "birthday": "",
+      "age": 35,
+      "gender": "Female",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 12,
+          "jobName": "Penjahit",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Penjahit, mahir dalam memasak hidangan seafood.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 13,
+          "fullName": "Andi",
+          "relative": {
+            "relativeStatus": "spouse"
+          }
+        },
+        {
+          "charId": 14,
+          "fullName": "Ria",
+          "relative": {
+            "relativeStatus": "child"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 13,
+      "fullName": "Andi",
+      "nickname": "",
+      "birthday": "",
+      "age": 38,
+      "gender": "Male",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 13,
+          "jobName": "Staff Pelabuhan",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Staff di pelabuhan, suami Riani.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 12,
+          "fullName": "Riani",
+          "relative": {
+            "relativeStatus": "spouse"
+          }
+        },
+        {
+          "charId": 14,
+          "fullName": "Ria",
+          "relative": {
+            "relativeStatus": "child"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 14,
+      "fullName": "Ria",
+      "nickname": "",
+      "birthday": "",
+      "age": 12,
+      "gender": "Female",
+      "origin": "Asli",
+      "jobs": [],
+      "isDateAble": false,
+      "description": "Anak Riani dan Andi.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 12,
+          "fullName": "Riani",
+          "relative": {
+            "relativeStatus": "parent"
+          }
+        },
+        {
+          "charId": 13,
+          "fullName": "Andi",
+          "relative": {
+            "relativeStatus": "parent"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 15,
+      "fullName": "Viona",
+      "nickname": "",
+      "birthday": "",
+      "age": 22,
+      "gender": "Female",
+      "origin": "Pendatang",
+      "jobs": [
+        {
+          "jobId": 14,
+          "jobName": "Perawat",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Perawat, putri Dokter Heri.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 16,
+          "fullName": "Dokter Heri",
+          "relative": {
+            "relativeStatus": "parent"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 16,
+      "fullName": "Dokter Heri",
+      "nickname": "",
+      "birthday": "",
+      "age": 48,
+      "gender": "Male",
+      "origin": "Pendatang",
+      "jobs": [
+        {
+          "jobId": 15,
+          "jobName": "Dokter",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Dokter yang membangun klinik dengan bantuan dari pemerintah.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 15,
+          "fullName": "Viona",
+          "relative": {
+            "relativeStatus": "child"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 17,
+      "fullName": "Lina",
+      "nickname": "",
+      "birthday": "",
+      "age": 39,
+      "gender": "Female",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 16,
+          "jobName": "Ibu Rumah Tangga",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Istri Kakek Yunus, mahir dalam memasak seafood.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 18,
+          "fullName": "Kakek Yunus",
+          "relative": {
+            "relativeStatus": "spouse"
+          }
+        },
+        {
+          "charId": 19,
+          "fullName": "Deri",
+          "relative": {
+            "relativeStatus": "child"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 18,
+      "fullName": "Kakek Yunus",
+      "nickname": "",
+      "birthday": "",
+      "age": "",
+      "gender": "Male",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 17,
+          "jobName": "Nelayan",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Nelayan yang terkadang ditemani anaknya Deri dan adiknya Max.",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 17,
+          "fullName": "Lina",
+          "relative": {
+            "relativeStatus": "spouse"
+          }
+        },
+        {
+          "charId": 19,
+          "fullName": "Deri",
+          "relative": {
+            "relativeStatus": "child"
+          }
+        },
+        {
+          "charId": 20,
+          "fullName": "Max",
+          "relative": {
+            "relativeStatus": "sibling"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 19,
+      "fullName": "Deri",
+      "nickname": "",
+      "birthday": "",
+      "age": 20,
+      "gender": "Male",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 18,
+          "jobName": "Nelayan",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Nelayan anak Kakek Yunus, sering bersama adik Kakek Yunus (Max).",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 18,
+          "fullName": "Kakek Yunus",
+          "relative": {
+            "relativeStatus": "parent"
+          }
+        },
+        {
+          "charId": 17,
+          "fullName": "Lina",
+          "relative": {
+            "relativeStatus": "parent"
+          }
+        }
+      ]
+    },
+    {
+      "charId": 20,
+      "fullName": "Max",
+      "nickname": "",
+      "birthday": "",
+      "age": 41,
+      "gender": "Male",
+      "origin": "Asli",
+      "jobs": [
+        {
+          "jobId": 19,
+          "jobName": "Nelayan",
+          "createdAt": "2024-07-22T07:44:36.000Z",
+          "updatedAt": "2024-07-22T07:44:36.000Z"
+        }
+      ],
+      "isDateAble": false,
+      "description": "Nelayan adik Kakek Yunus, sering bersama keponakan (Deri).",
+      "likes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "dislikes": {
+        "activities": [],
+        "goods": [],
+        "foods": []
+      },
+      "relatives": [
+        {
+          "charId": 18,
+          "fullName": "Kakek Yunus",
+          "relative": {
+            "relativeStatus": "sibling"
+          }
+        },
+        {
+          "charId": 19,
+          "fullName": "Deri",
+          "relative": {
+            "relativeStatus": "nephew"
+          }
+        }
+      ]
+    }
+  ]
+  

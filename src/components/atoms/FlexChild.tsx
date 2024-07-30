@@ -22,13 +22,14 @@ const FlexChild: React.FC<FlexProps> = ({
     margin = new Margin({all:undefined}), 
     padding = new Padding({all:undefined}),
     backgroundColor = Color.INHERIT,
-    height = Dimension.FULL,
+    height,
     width = Dimension.FULL,
     basis
   }) => {
   const flexrowClass = classNames(
     "flex", 
     `basis-${basis}`,
+    {"flex-grow" : basis === Basis.GROW},
     `bg-${backgroundColor}`,
     
     // Margin

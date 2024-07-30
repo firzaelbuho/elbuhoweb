@@ -14,14 +14,14 @@ interface GridProps {
     padding?:Padding;
     margin?:Margin;
     // direction: Direction;
-    // verticalAlignment? : ContentAlignment;
+    verticalAlignment? : ContentAlignment;
     width? : Dimension;
     height?: Dimension;
 }
 
 const GridRow: React.FC<GridProps> = ({ 
   children, 
-//   verticalAlignment = ContentAlignment.NORMAL,
+  verticalAlignment = ContentAlignment.NORMAL,
   gap = 0, rows = 1 , 
   backgroundColor = Color.INHERIT, 
   margin = new Margin({all:undefined}), 
@@ -37,7 +37,7 @@ const GridRow: React.FC<GridProps> = ({
     `bg-${backgroundColor}`,
    
     `gap-${gap}`,
-    // `content-${verticalAlignment}`,
+    `content-${verticalAlignment}`,
    
     `h-${height}`,
     `w-${width}`,

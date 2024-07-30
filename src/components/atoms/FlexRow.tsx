@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { Color } from '@/models/enum/Color';
 import { Dimension, Direction, Overflow } from '@/models/enum/Layout';
 import { FlexWrap } from '@/models/enum/Flex';
-import { ContentAlignment, VerticalAlignment } from '@/models/enum/Alignment';
+import { ContentAlignment, ItemAlignment, VerticalAlignment } from '@/models/enum/Alignment';
 import { Margin, Padding } from '@/models/class/Layout';
 
 interface FlexProps {
@@ -13,32 +13,32 @@ interface FlexProps {
     padding?:Padding;
     margin?:Margin;
     horizontalAlignment? : ContentAlignment;
-    verticalAlignment? : VerticalAlignment;
+    verticalAlignment? : ItemAlignment;
     width? : Dimension;
     height?: Dimension;
-    direction:Direction;
+    isReverse?: boolean;
     wrap?:FlexWrap;
-    overflow?: Overflow;
+    // overflow?: Overflow;
     gap? : number;
 }
 
-const Flex: React.FC<FlexProps> = ({
+const FlexRow: React.FC<FlexProps> = ({
     children,
     margin = new Margin({all:undefined}), 
     padding = new Padding({all:undefined}),
     backgroundColor = Color.INHERIT,
-    height = Dimension.FULL,
+    height,
     width = Dimension.FULL,
     wrap = FlexWrap.WRAP,
-    overflow = Overflow.AUTO,
+    // overflow = Overflow.AUTO,
     gap = 0,
-    direction,
+    isReverse = false,
     horizontalAlignment = ContentAlignment.START,
-    verticalAlignment = VerticalAlignment.MIDDLE
+    verticalAlignment = ItemAlignment.START
   }) => {
   
   if(wrap != FlexWrap.NO_WRAP){
-    overflow = Overflow.VISIBLE;
+    // overflow = Overflow.VISIBLE;
   }
     
   const flexrowClass = classNames(
@@ -48,9 +48,12 @@ const Flex: React.FC<FlexProps> = ({
     // "justify-center",
 
     `justify-${horizontalAlignment}`,
-    {"items-center" : verticalAlignment===VerticalAlignment.MIDDLE},
+    `items-${verticalAlignment}`,
 
-    `flex-${direction}`,
+    {"flex-row-reverse" : isReverse,
+     "flex-row" : !isReverse
+    },
+   
     `bg-${backgroundColor}`,
 
      // Margin
@@ -69,7 +72,7 @@ const Flex: React.FC<FlexProps> = ({
     `w-${width}`,
     `gap-${gap}`,
     `flex-${wrap}`,
-    `overflow-${overflow}`,
+    // `overflow-${overflow}`,
   );
 
   return (
@@ -79,4 +82,4 @@ const Flex: React.FC<FlexProps> = ({
   );
 };
 
-export default Flex;
+export default FlexRow;

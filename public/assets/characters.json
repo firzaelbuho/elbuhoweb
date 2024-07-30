@@ -1,0 +1,948 @@
+[
+  {
+  "charId": 1,
+  "fullName": "Viona",
+  "birthday": "14 July",
+  "age": 23,
+  "gender": "Female",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Perawat, datang dari kota bersama ayahnya untuk membantu orang-orang di daerah terpencil",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 2,
+  "fullName": "Heri",
+  "birthday": "17 November",
+  "age": 44,
+  "gender": "Male",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Dokter, membangun klinik di pulau dengan dananya sendiri. dibantu putrinya Viona",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 3,
+  "fullName": "Joni",
+  "birthday": "14 April",
+  "age": 20,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Anak sebatangkara, yang kemudian diangkat menjadi anak oleh Jeki. bekerja bersama Jeki sebagai petugas keamanan",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 4,
+  "fullName": "Jeki",
+  "birthday": "11 Feburary",
+  "age": 50,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Petugas keamanan desa. tidak dikaruniai anak, akhirnya menemukan Joni dan mengangkatnya sebagai anak",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 5,
+  "fullName": "Tono",
+  "birthday": "24 September",
+  "age": 50,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Kepala desa yang bijaksana dan selalu mendukung warganya.",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 6,
+  "fullName": "Tini",
+  "birthday": "2 April",
+  "age": 45,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "istri kepala desa",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 7,
+  "fullName": "Dewi",
+  "birthday": "12 November",
+  "age": 22,
+  "gender": "Female",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Guru junior dari kota. baik dan pinter",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 8,
+  "fullName": "Budi",
+  "birthday": "11 July",
+  "age": 36,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Guru Senior. baik, tulus dan bijaksana",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 9,
+  "fullName": "Henry",
+  "birthday": "11 October",
+  "age": 27,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Manajer yang mengelola hotel untuk wisatawan / pendatang",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 10,
+  "fullName": "Yuki",
+  "birthday": "17 March",
+  "age": 21,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Resepsionis Hotel. penduduk asli",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 11,
+  "fullName": "Kezio",
+  "birthday": "5 May",
+  "age": 23,
+  "gender": "Male",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Pengurus peternakan, bersama dengan kembarannya, Kezia",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 12,
+  "fullName": "Kezia",
+  "birthday": "5 May",
+  "age": 23,
+  "gender": "Female",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Pengurus peternakan, bersama dengan kembarannya, Kezio",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 13,
+  "fullName": "Lim",
+  "birthday": "12 December",
+  "age": 26,
+  "gender": "Male",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Seorang merchant, menangani keluar masuknya barang. juga menyediakan pemesanan barang dari luar desa dan pulau",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 14,
+  "fullName": "Lino",
+  "birthday": "1 January",
+  "age": 25,
+  "gender": "Male",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Teknisi, ahli dalam bidang komputer. bertugas mengoperasikan pembangkit listrik dan bertanggungjawab perihal kelistrikan",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 15,
+  "fullName": "Helisma",
+  "birthday": "15 June",
+  "age": 24,
+  "gender": "Female",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Mantan idol terkenal, setelah memutuskan berhenti sebagai idol. untuk menenagkan diri memutuskan sementara pindah ke Desa. ia juga sering menghibur warga desa dengan Suaranya",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 16,
+  "fullName": "Max",
+  "birthday": "3 April",
+  "age": 28,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Penjaga pantai, adik dari Mr. Yunus. juga suka mengajar gymnastic. atletis",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 17,
+  "fullName": "Albert",
+  "birthday": "2 December",
+  "age": 48,
+  "gender": "Male",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Pemilik Cafe, pengusaha besar. membawa keluarganya ke desa untuk mengurangi stress. berasal dari negeri barat",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 18,
+  "fullName": "May",
+  "birthday": "10 October",
+  "age": 47,
+  "gender": "Female",
+  "origin": null,
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Istri dari Albert, bekerja di Cafe milik nya",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 19,
+  "fullName": "Melissa",
+  "birthday": "1 April",
+  "age": 19,
+  "gender": "Female",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Anak dari May dan Albert. ikut pindah orang tuanya untuk mencari suasana tenang demi melakukan hobbynya bermain musik. terampil bermain berbagai alat musik seperti biola dan Keyboard",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 20,
+  "fullName": "Yunus",
+  "birthday": "7 June",
+  "age": 39,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Nelayan di desa. ",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 21,
+  "fullName": "Lina",
+  "birthday": "11 February",
+  "age": 39,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Istri yunus, pandai memasak berbagai olahan seafood",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 22,
+  "fullName": "Deri",
+  "birthday": "3 September",
+  "age": 19,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Putra Yunus dan Lina, suka ikut mencari ikan bersama ayahnya",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 23,
+  "fullName": "Siska",
+  "birthday": "1 November",
+  "age": 29,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "anak bungsu Nani dan Sanjaya, bibi dari nana, sekarang bekerja sebagai sekretaris di kantor Relife. galak",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 24,
+  "fullName": "Linda",
+  "birthday": "7 April",
+  "age": 18,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Putri Kepala Desa. baik hati. kini membantu pekerjaan orang tuanya dalam mengurus administrasi dan hubungan dengan para warga",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 25,
+  "fullName": "Andi",
+  "birthday": "16 January",
+  "age": 38,
+  "gender": "Male",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Pekerja keras, bekerja di pelabuhan. jarang pulang. dulnya dari luar, dan menikah dengan warga desa",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 26,
+  "fullName": "Riani",
+  "birthday": "11 August",
+  "age": 38,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "istri Andi, ibu rumah tangga",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 27,
+  "fullName": "Ria",
+  "birthday": "28 May",
+  "age": 12,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Putri Andi dan Riani, lucu dan hormat kepada semua orang, periang",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 28,
+  "fullName": "Sanjaya",
+  "birthday": "23 August",
+  "age": 67,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Sepuh di desa. sangat dihormati. suami dari Nani dan kakek dari Nana",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 29,
+  "fullName": "Nina",
+  "birthday": "11 June",
+  "age": 65,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Istri dari Sanjaya. nenek dari Nana.",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 30,
+  "fullName": "Nana",
+  "birthday": "10 April",
+  "age": 6,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Cucu dari Nani dan Sanjaya. memilih tinggal bersama kakek dan neneknya dibanding kedua orang tuanya di kota",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 31,
+  "fullName": "Lia",
+  "birthday": "16 Desember",
+  "age": 12,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Anak kepala desa, adik linda. suka seni",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 32,
+  "fullName": "Leonardo",
+  "birthday": "11 January",
+  "age": 20,
+  "gender": "Male",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Pelukis pendatang, ingin mengabadikan keindahan di desa",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 33,
+  "fullName": "Cindy",
+  "birthday": "1 October",
+  "age": 25,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "seorang biologist dan botanist, mengurus museum keanekaragaman. suka meneliti berbagai makhluk hidup yang ada. sering bekerja sama dengan Karl",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 34,
+  "fullName": "Karl",
+  "birthday": "26 December",
+  "age": 25,
+  "gender": "Male",
+  "origin": "Immigrant",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Geologist, Explorer, suka menjelajah dan meneliti alam, sering bekerja sama dengan Cindy",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 35,
+  "fullName": "Deri",
+  "birthday": "18 January",
+  "age": 40,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Petani , bertanggung jawab mengelola lahan persawahan",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 36,
+  "fullName": "Diana",
+  "birthday": "17 January",
+  "age": 40,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "istri Deri. membantu mengurus pertanian",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 37,
+  "fullName": "Lilia",
+  "birthday": "20 January",
+  "age": 11,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "putri keluarga petani, teman Lia",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 38,
+  "fullName": "Elly",
+  "birthday": "20 September",
+  "age": 20,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Kasir di mart",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 39,
+  "fullName": "Tomy",
+  "birthday": "22 November",
+  "age": 23,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Staff di mart, mengurusi seperti stok barang, mengantar barang dan sebagainya",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 40,
+  "fullName": "Flora",
+  "birthday": "29 April",
+  "age": 19,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "Gadis Penyuka bunga, memiliki taman bunga, suka menjual bunganya kepada para wisatawan",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 41,
+  "fullName": "Lani",
+  "birthday": "30 March",
+  "age": 42,
+  "gender": "Female",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Single Parent, bekerja sebagai penjahit. ibu dari Flora",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 42,
+  "fullName": "Gani",
+  "birthday": "11 January",
+  "age": 43,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": false,
+  "description": "Pengrajin, bisa membuat berbagai bentuk bangunan maupun perabotan dan perkakas dari kayu , batu, dsb, single parent.",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  },
+  {
+  "charId": 43,
+  "fullName": "Kim",
+  "birthday": "12 October",
+  "age": 18,
+  "gender": "Male",
+  "origin": "Native",
+  "jobs": [],
+  "isDateAble": true,
+  "description": "putra Gani, suka membantu pekerjaan orang tuanya. juka suka membuat berbagai macam kerajinan tangan untuk dijual ",
+  "likes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "dislikes": {
+  "activities": [],
+  "goods": [],
+  "foods": []
+  },
+  "relatives": []
+  }
+  ]

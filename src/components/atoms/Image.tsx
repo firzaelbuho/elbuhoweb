@@ -10,6 +10,7 @@ import { Dimension } from '@/models/enum/Layout';
 
 
 interface ImageProps {
+  onClick?: () => void;
   src?: string;
   alt?:string
   width?: Dimension;
@@ -24,11 +25,12 @@ interface ImageProps {
 }
 
 const Image: React.FC<ImageProps> = ({
+  onClick, 
   src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPKSe_z6cgW-yTyEBOILtedGE1hyCFBHSKg&s",
   alt ="",
   width = Dimension.FULL,
   height = Dimension.AUTO,
-  fit = ImageFit.COVER,
+  fit = ImageFit.CONTAIN,
   imageAlignment = ImageAlignment.LEFT,
   borderRadius = BorderRadius.NONE,
   borderStyle = BorderStyle.NONE,

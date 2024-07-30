@@ -21,6 +21,7 @@ import { Dimension } from "@/models/enum/Layout"
 import { Color } from "@/models/enum/Color"
 import Container from "@/components/atoms/Container"
 import { Padding, Margin } from "@/models/class/Layout"
+import Synopsys from "@/components/molecules/rti/Synopsys"
 
 
 
@@ -54,6 +55,18 @@ export default function RtiHomePage() {
 
         {/* Content */}
 
+        {/* Synopsys */}
+
+        <Container backgroundColor={Color.ACCENT}  padding={padding}>
+          <Container  width={Dimension["2/3"]}>
+            <Motion anim={AnimationStyle.SWIPE_UP_IN}> 
+              <Synopsys/>
+            </Motion>           
+          </Container>
+        </Container>   
+        
+
+        {/* Characters */}
         <Container backgroundColor={Color.ACCENT}  padding={padding}>
           <Container  width={Dimension["2/3"]}>
             <Motion anim={AnimationStyle.SWIPE_UP_IN}><Characters/></Motion>

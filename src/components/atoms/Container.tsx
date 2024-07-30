@@ -3,7 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { Color } from '@/models/enum/Color';
 import { ContentAlignment, SelfAlignment } from '@/models/enum/Alignment';
-import { Dimension } from '@/models/enum/Layout';
+import { Dimension, Overflow } from '@/models/enum/Layout';
 import { BorderRadius, BorderStyle } from '@/models/enum/Border';
 import { Shadow } from '@/models/enum/Shadow';
 import { Padding, Margin } from '@/models/class/Layout';
@@ -24,11 +24,13 @@ interface BoxProps {
     borderStyle?: BorderStyle;
     isContainer?: boolean;
     textColor?: Color;
+    overflow?: Overflow;
 }
 
 const Container: React.FC<BoxProps> = ({ 
     children,
     textColor,
+    overflow = Overflow.AUTO,
     margin = new Margin({all:undefined}), 
     padding = new Padding({all:undefined}),
     backgroundColor = Color.INHERIT,
@@ -46,7 +48,7 @@ const Container: React.FC<BoxProps> = ({
   const boxClass = classNames(
     `bg-${backgroundColor}`,
     `text-${textColor}`,
-
+    `overflow-${overflow}`,
     // Padding
     `mt-${margin.top}`,
     `mb-${margin.bottom}`,

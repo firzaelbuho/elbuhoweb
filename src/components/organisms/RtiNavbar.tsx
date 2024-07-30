@@ -12,6 +12,7 @@ import Image from "../atoms/Image";
 import { color } from "framer-motion";
 
 function RtiNavbar(){
+    
     return(
         <nav className="bg-base-100 fixed w-full pt-8 pb-5 z-[9999]" >
             <Container backgroundColor={Color.INHERIT}  width={Dimension["2/3"]}>
@@ -19,6 +20,7 @@ function RtiNavbar(){
                     {/* title */}
                     <GridCell colSpan={2}  >
                         <Image
+                            width={Dimension["2/3"]}
                             src="/relife-logo.svg"
                         />
                     </GridCell>

@@ -4,6 +4,11 @@
 
 - kelas "grid-flow-col" khusus diperlukan kalau pakai grid-rows
 -  z-[9999], kelas agar component di paling atas, gunakan pada navbar yang fixed agar tidak tertimpa ketika scroll
+- kadang coba utak atik mx-auto dan text-center buat text ditengah, terutama ketika p biasa. 
+
+# Api
+
+Biaskaan cek inspect element -> console di browser kalo gagal fetch dll
 
 # Logo
 - font : francklin-gothic-heavy
@@ -17,9 +22,13 @@
 - ketika textLevel adalah heading (H1-H6) maka atribut bold dan size pada props diabaikan, pake ukuran default mereka
 
 # Layout
+- gap pada grid tidak mempengaruhi width/height. jadi aman. kalau flex gap tetap dihitung
+- Biasakan overflow ditaruh di parent/container/box yg mengandung grid/flex. karena itu lah yg memberi nilai mutlak tinggi/lebar
 - mx-auto itu mencenterkan komponen itu sendiri dari parentnya, karena seakan akan memberi margin yg seimbang di kanan kirinya sehingga ia berada di tengah
 - w-1 => 0.25 rem => 24px
-- Kelas h-screen dalam Tailwind CSS menetapkan tinggi elemen menjadi 100% dari tinggi viewport. 
+- Kelas h-screen dalam Tailwind CSS menetapkan tinggi elemen menjadi 100% dari tinggi viewport.
+- Grid Column panjang/tingginya selalu menyesuaikan otomatis. cocok untuk objek yg ukuran sama misal galeri.
+- Gunakan Flex agar fleksibel
 
 ## Grid 
 - Horizontal => GridColumn
@@ -30,6 +39,9 @@
 - kalau GridColumn, maka di Alignment berdasarkan vertikal / baris"nya, bwgitupun sebaliknya
 
 ## Flex
+- FlexRow = child dibariskan sebagai 1 baris
+- FlexColumn = child disusun sebagai 1 kolom
+- flext support horizontal dan vertical alignment (justify-x maupun items-x)
 - jika child menggunakan pecahan, jika total pecahan basis child lebih dari 1, misal 5/4 tetap akan dibuat 1 baris (FlexRow) nanti disesuaikan lagi lebarnya (FlexRow)
 - jika childnya basisnya dimensi jelas bukan rasio, maka akan disesuaikan selebar itu panjang basisnya, dan sisa width/height containernya akan kosong, tidak seperti column yg akan memberi spasi agar width/height terpakai semua
 - 

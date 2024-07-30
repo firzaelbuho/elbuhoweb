@@ -4,7 +4,7 @@ import { Color } from "@/models/enum/Color";
 import { TextAlignment } from "@/models/enum/Alignment";
 import Button from "@/components/atoms/Button";
 import { ButtonStyle } from "@/models/enum/Button";
-import Flex from "@/components/atoms/Flex";
+import Flex from "@/components/atoms/FlexRow";
 import GridColumn from "@/components/atoms/GridColumn";
 import GridCell from "@/components/atoms/GridCell";
 import { Size } from "@/models/enum/Size";

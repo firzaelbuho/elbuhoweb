@@ -65,8 +65,32 @@ export enum VerticalAlignment {
   /**
    * Align text to the baseline of the cell.
    */
-  BASELINE = "baseline",
-  STRETCH = "stretch"
+  BASELINE = "baseline"
+
 }
+
+export enum ItemAlignment{
+  START = "start",
+
+  /**
+   * Align text to the middle of the cell.
+   */
+  CENTER = "center",
+
+  /**
+   * Align text to the bottom of the cell.
+   */
+  END = "end",
+
+  /**
+   * Align text to the baseline of the cell.
+   */
+  BASELINE = "baseline",
+
+  STRETCH = "stretch"
+
+}
+
+
 
   

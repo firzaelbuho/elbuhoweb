@@ -25,7 +25,7 @@ const GridCell: React.FC<GridProps> = ({
     colSpan = 1,
     rowSpan = 1,
     backgroundColor = Color.INHERIT,
-    height = Dimension.FULL,
+    height,
     width = Dimension.FULL
 }) => {
   const gridClass = classNames(
