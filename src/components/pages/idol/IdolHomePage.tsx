@@ -12,6 +12,7 @@ import { ContentAlignment } from '@/models/enum/Alignment';
 import { Dimension } from '@/models/enum/Layout';
 import { Color } from '@/models/enum/Color';
 
+
 interface IdolHomePageProps {
   
 }
@@ -39,7 +40,7 @@ useEffect(() => {
           horizontalAlignment={ContentAlignment.CENTER}>
 
         {members.map((member)=>(
-              <div className='p-3'>
+              <div key={member.memberId} className='p-3'>
                   <MemberCard member={member} />
               </div>
             

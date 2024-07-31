@@ -75,7 +75,7 @@ const Characters: React.FC<RtiCharactersProps> = ({
     <FlexRow   gap={0} wrap={FlexWrap.WRAP}>
       {characters.map((char)=>(
         
-      <FlexChild basis={Basis['1/5']}  padding={new Padding({all:5})} >
+      <FlexChild basis={Basis['1/5']}  padding={new Padding({all:5})} key={char.charId}>
        
         <Motion triger={AnimationTrigger.HOVER} scaled={1.2} anim={AnimationStyle.SCALED}>
           <a href={"/relife-the-island/character/"+char.charId}>

@@ -1,3 +1,7 @@
+# Jangan Lupa Iterator
+
+setiap mapping selalu pakai key pada value hasil mapping ya
+
 # Notes
 
 - tailwind classname tidak bisa dimodif secara dinamis (contoh : btn-${color}). harus masukan ke safelist dulu pada tailwind.config.json

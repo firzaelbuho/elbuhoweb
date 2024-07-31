@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
   const [componentName, setComponentName] = useState('');
   const [generatedCode, setGeneratedCode] = useState('');
 
@@ -66,4 +66,4 @@ export default ${componentName};
   );
 };
 
-export default page;
+export default Page;

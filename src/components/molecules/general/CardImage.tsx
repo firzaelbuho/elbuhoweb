@@ -32,7 +32,7 @@ const CardImage: React.FC<ImageCharProps> = ({
             <Image 
                 imageAlignment={ImageAlignment.CENTER}
                 fit={ImageFit.COVER}
-                url={url}
+                src={url}
                 
             />
         </figure>
@@ -40,7 +40,7 @@ const CardImage: React.FC<ImageCharProps> = ({
             <h2 className="card-title">{title}</h2>
             <p>{desc}</p>
             <div className="card-actions justify-end">
-            <Button label={buttonLabel} color={Color.PRIMARY} />
+            <Button label={buttonLabel} btnColor={Color.PRIMARY} />
             </div>
         </div>
         </div>
