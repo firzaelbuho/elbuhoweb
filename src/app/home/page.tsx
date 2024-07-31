@@ -1,4 +1,4 @@
-import ThemeChanger from "@/components/molecules/general/ThemeChanger"
+
 // import Navbar from "@/components/Navbar"
 
 export default function Page() {
@@ -7,7 +7,7 @@ export default function Page() {
       <div className="container mx-auto  p-5">
        
         {/* <Navbar /> */}
-        <ThemeChanger />
+        {/* <ThemeChanger /> */}
         <div>
          
         </div>

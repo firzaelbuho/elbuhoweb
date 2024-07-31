@@ -1,7 +1,7 @@
 
 "use client"
 
-import ThemeChanger from "@/components/molecules/general/ThemeChanger"
+
 import RtiNavbar from "@/components/organisms/RtiNavbar"
 
 import Image from "@/components/atoms/Image"
@@ -71,7 +71,7 @@ export default function RtiHomePage() {
           <Container  width={Dimension["2/3"]}>
             <Motion anim={AnimationStyle.SWIPE_UP_IN}><Characters/></Motion>
           </Container>
-        </Container>   
+        </Container>    
 
        
 

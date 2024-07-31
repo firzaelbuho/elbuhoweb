@@ -6,7 +6,8 @@ import React, { useState } from 'react';
 const page: React.FC = () => {
   
   return (
-    <AvatarHomePage/>
+    <div>Hello</div>
+    // <AvatarHomePage/>
   )
    
 };

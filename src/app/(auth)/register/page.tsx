@@ -1,13 +1,13 @@
 "use client"
 import React from 'react';
 import RegisterForm from '@/components/molecules/auth/RegisterForm';
-import ThemeChanger from '@/components/molecules/general/ThemeChanger';
+
 
 export default function Page(){
   return (
     <div>
       <div className='p-5'>
-      <ThemeChanger />
+      {/* <ThemeChanger /> */}
       </div>
       
       <div className="grid grid-cols-3">
