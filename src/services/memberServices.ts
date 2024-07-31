@@ -1,10 +1,11 @@
 // lib/fetchMembers.ts
 import { Member } from "@/models/class/Jkt48";
+import { BASE_URL } from "@/utils/util";
 
-const baseUrl = "http://localhost:3000"
+
 
 export const fetchMembers = async (): Promise<Member[]> => {
-  const response = await fetch(baseUrl+'/assets/members.json');
+  const response = await fetch(BASE_URL+'/assets/members.json');
   if (!response.ok) {
     throw new Error('Failed to fetch members');
   }

@@ -36,6 +36,7 @@ import FlexColumn from "@/components/atoms/FlexColumn"
 import { Character } from "@/models/class/Characters"
 import Divider from "@/components/atoms/Divider"
 import classNames from "classnames"
+import { BASE_URL } from "@/utils/util"
 
 interface CharacterProfileProps {
 
@@ -59,7 +60,7 @@ const CharacterProfile: React.FC<CharacterProfileProps> = ({
               
               <Box padding={padding} backgroundColor={Color.ACCENT} borderRadius={BorderRadius.LG}>
                 <Image 
-                  src={`/assets/characters/${character.fullName}.jpeg`}
+                  src={`${BASE_URL}/assets/characters/${character.fullName}.jpeg`}
                   borderStyle={BorderStyle.SOLID}
                   borderColor={Color.BASE_100}
                   borderRadius={BorderRadius.XL} />

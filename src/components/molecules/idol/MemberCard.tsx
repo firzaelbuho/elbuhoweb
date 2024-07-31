@@ -17,6 +17,7 @@ import Box from '@/components/atoms/Box';
 import { BorderRadius, BorderStyle } from '@/models/enum/Border';
 import { Dimension, Position } from '@/models/enum/Layout';
 import Container from '@/components/atoms/Container';
+import { API_URL, BASE_URL } from '@/utils/util';
 
 interface ImageCharProps {
 
@@ -53,7 +54,7 @@ const MemberCard: React.FC<ImageCharProps> = ({
                     padding={new Padding({x:2})} >
                     <GridCell verticalAlignment={ContentAlignment.CENTER}  >
                        
-                        <Text textColor={Color.BLACK} textAlignment={TextAlignment.CENTER} textLevel={TextLevel.H1}>90</Text>
+                        <Text textColor={Color.BLACK} textAlignment={TextAlignment.CENTER} textLevel={TextLevel.H2}>90</Text>
                     </GridCell>
                     <GridCell 
                         colSpan={2} 
@@ -63,7 +64,7 @@ const MemberCard: React.FC<ImageCharProps> = ({
                             <Image 
                             imageAlignment={ImageAlignment.CENTER}
                             fit={ImageFit.COVER}
-                            src='http://localhost:3000/assets/kabesha/shani.png'
+                            src={BASE_URL+'/assets/kabesha/'+member.nickname[0]+".png"}
                             
                             />
                             
@@ -84,7 +85,12 @@ const MemberCard: React.FC<ImageCharProps> = ({
                 </GridColumn>
           
             <Container height={Dimension['1/5']} backgroundColor={Color.ERROR} verticalAlignment={ContentAlignment.CENTER}>
-                <Text   textAlignment={TextAlignment.CENTER} textLevel={TextLevel.H5}>{member.nickname[0]}</Text>
+                <Text   
+                textAlignment={TextAlignment.CENTER} 
+                textColor={Color.WHITE}
+                textLevel={TextLevel.H5}>
+                    {member.nickname[0]}
+                    </Text>
             </Container>
                 
            

@@ -68,11 +68,13 @@ const FlexRow: React.FC<FlexProps> = ({
      `pl-${padding.left}`,
      `pr-${padding.right}`,
 
-    `h-${height}`,
+     `h-${height}`,
     `w-${width}`,
     `gap-${gap}`,
     `flex-${wrap}`,
     // `overflow-${overflow}`,
+
+    // "mx-auto"
   );
 
   return (
@@ -81,5 +83,6 @@ const FlexRow: React.FC<FlexProps> = ({
     </div>
   );
 };
+
 
 export default FlexRow;

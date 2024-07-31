@@ -1,14 +1,13 @@
 import { Character, Job, PersonRelative, Relative, Group, Activity, Food, Good } from '@/models/class/Characters'; // Assuming the classes are in a file named CharacterClasses.ts
+import { API_URL } from '@/utils/util';
 
 // utils/loadCharacters.ts
 
-const baseUrl = "http://localhost:300"
-const apiUrl = "https://elbuhoapiv2.my.id/api"
 
 // import { Character, Job, PersonRelative, Relative, Group, Activity, Food, Good } from './characterClasses';
 
 export async function fetchAllCharacters(): Promise<Character[]> {
-  const response = await fetch(apiUrl + '/rti/characters/full');
+  const response = await fetch(API_URL+ '/rti/characters/full');
   const data = await response.json();
   
   return data.data.map((charData: any) => {
@@ -74,7 +73,7 @@ function mapGroup(groupData: any): Group | undefined {
 }
 
 export async function fetchAllCharactersById(charId:number): Promise<Character> {
-    const response = await fetch(apiUrl + '/rti/characters/full/'+charId);
+    const response = await fetch(API_URL + '/rti/characters/full/'+charId);
     const data = await response.json();
     const charData = data.data;
     

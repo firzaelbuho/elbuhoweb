@@ -9,6 +9,8 @@ import FlexColumn from '@/components/atoms/FlexColumn';
 import GridColumn from '@/components/atoms/GridColumn';
 import FlexRow from '@/components/atoms/FlexRow';
 import { ContentAlignment } from '@/models/enum/Alignment';
+import { Dimension } from '@/models/enum/Layout';
+import { Color } from '@/models/enum/Color';
 
 interface IdolHomePageProps {
   
@@ -32,14 +34,16 @@ useEffect(() => {
   return (
     <div>
        <h1>Member List</h1>
-       <FlexRow
-       horizontalAlignment={ContentAlignment.CENTER}>
-       {members.map((member)=>(
-            <div className='p-3'>
-                <MemberCard member={member} />
-            </div>
-           
-        ))}
+       <FlexRow 
+          // backgroundColor={Color.PRIMARY}
+          horizontalAlignment={ContentAlignment.CENTER}>
+
+        {members.map((member)=>(
+              <div className='p-3'>
+                  <MemberCard member={member} />
+              </div>
+            
+          ))}
        </FlexRow>
        
     </div>
