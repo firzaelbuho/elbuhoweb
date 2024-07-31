@@ -1,57 +1,46 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
-import { useEffect } from 'react'
-// import { themeChange } from 'theme-change'
 
+export default function ThemeChanger() {
+    const [theme, setTheme] = useState('light');
 
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const currentTheme = window.localStorage.getItem('toolit_theme') || 'light';
+            setTheme(currentTheme);
+        }
+    }, []);
 
+    const options = ["dark", "light", "cupcake", "bumblebee", "emerald", "corporate", "synthwave",
+        "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua",
+        "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk",
+        "autumn", "business", "acid", "lemonade", "night", "coffee", "winter", "dim",
+        "nord", "sunset"
+    ];
 
-// export default function ThemeChanger(){
-   
-//     const currentTheme = window.localStorage.getItem('toolit_theme') || 'light';
-//     const [theme, setTheme] = useState(currentTheme);
-//     // setTheme(currentTheme);
+    const toggleTheme = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const newTheme = event.target.value;
+        setTheme(newTheme);
+        if (typeof window !== 'undefined') {
+            window.localStorage.setItem('toolit_theme', newTheme);
+        }
+    };
 
-//     const options = ["dark",
-//         "light",  "cupcake", "bumblebee", "emerald", "corporate", "synthwave",
-//         "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua",
-//         "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk",
-//         "autumn", "business", "acid", "lemonade", "night", "coffee", "winter", "dim",
-//         "nord", "sunset"
-//       ];
+    useEffect(() => {
+        const htmlElement = document.querySelector('html') as HTMLHtmlElement | null;
+        htmlElement?.setAttribute('data-theme', theme);
+    }, [theme]);
 
-//     const toggleTheme = (event: React.ChangeEvent<HTMLSelectElement>) => {
-//         setTheme(event.target.value);
-//         window.localStorage.setItem('toolit_theme', event.target.value);
-//         // alert("diklik")
-//     };
-//   // initially set the theme and "listen" for changes to apply them to the HTML tag
-//     useEffect(() => {
-//         const htmlElement = document.querySelector('html') as HTMLHtmlElement | null;
-//         htmlElement?.setAttribute('data-theme', theme);
-
-//     }, [theme]);
-//     return (
-//         <label className="swap">
-//             <select defaultValue={currentTheme} className="select w-full max-w-xs input-primary-content" onChange={toggleTheme}>
-//                 {/* <option disabled selected>Theme</option> */}
-                
-//                 {options.map((option, index) => (
-//                     <option key={index} value={option}>
-//                         {option}
-//                     </option>
-//                 ))}
-//                 {/* <option value="light">light</option> */}
-               
-//             </select>
- 
-//         </label>
-//     );
-// }
-
-export default function ThemeChanger(){
-    return(
-        <div>Tes</div>
-    )
+    return (
+        <label className="swap">
+            <select defaultValue={theme} className="select w-full max-w-xs input-primary-content" onChange={toggleTheme}>
+                {options.map((option, index) => (
+                    <option key={index} value={option}>
+                        {option}
+                    </option>
+                ))}
+            </select>
+        </label>
+    );
 }
